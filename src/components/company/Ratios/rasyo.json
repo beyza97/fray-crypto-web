@@ -1,0 +1,506 @@
+[
+  {
+    "title": "Verimlilik Oranları",
+    "datas": [
+      {
+        "name": "Aktif Devir Hızı",
+        "formul": "Satış Gelirleri/Toplam Varlıklar",
+        "value": "Şirketin varlıklarını ne ölçüde verimli kullanarak ne kadar satış üretebildiğini ölçer. Oranın artması varlıklarla daha fazla satış üretilebildiği anlamı taşıdığı için olumludur ve verimlilik artışı olarak yorumlanır. Edward Altman'ın Z score modelinde kullanılan oranlardan biridir.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Özkaynak Devir hızı",
+        "formul": "Satış Gelirleri/Özkaynak",
+        "value": "Özkaynakların ne kadar verimli bir şekilde satışa dönüştüğünü göstermektedir. Her ne kadar artış olumlu yorumlansa da özkaynak düşüşü de oranı arttırabilir. Özkaynak düşüşü ise borç artışı anlamı taşıyabileceğinden, oranın yorumlanmasında dikkatli olunmalıdır. Özsermayesi yeterli seviyede olan bir şirket için artış olumludur.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "İşletme Sermayesi Devir Hızı",
+        "formul": "Satış Gelirleri/İşletme Sermayesi",
+        "value": "İşletme Sermayesi (working capital) dönen varlıklardan kısa dönemli kaynakların çıkartılması ile bulunur ve şirketin kısa dönemdeki faaliyetleri için elindeki likiditeyi gösterir. İşletme sermayesini daha etkin kullanarak daha fazla satış üreten bir şirkette verimlilik artışından bahsedilebilir. Bununla birlikte işletme sermayesi düşüşü yaşadığı için yüksek devir hızına sahip bir firmada oranın yükselişi her zaman olumlu olmayabilir. Negatif işletme sermayesi durumunda oran da negatif olur ve likidite açığına işaret eder.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Kısa Vadeli Ticari Borçlar/Satış Gelirleri",
+        "formul": "Kısa Vadeli Ticari Borçlar/Satış Gelirleri",
+        "value": "Ticari borçlar işletmenin esas faaliyetleri kapsamında üstlendiği borçlardır. Bu borçlar, borç tutarından daha yüksek bir getiri ile satışa dönüşebilmelidir. Orandaki azalma ticari borçların daha verimli kullanılarak daha çok satış geliri yarattığını gösterirken, artış olumsuzdur.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Stoklar/Satış Gelirleri",
+        "formul": "Stoklar/Satış Gelirleri",
+        "value": "Stokların satışa dönüşme verimi hakkında fikir verir. Orandaki azalma stok artış hızından daha yüksek bir satış artış hızını gösterir ve olumludur. Bununla birlikte orandaki ani düşüşler gelecekte stok yetersizliği ve yok satma problemi yaşanabileceğini de düşündürebilir.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Stok Elde Tutma Süresi",
+        "formul": "365/(Satışların Maliyeti/Stoklar)",
+        "value": "Stokların ne sürede satışa dönüşerek, yılda ortalama kaç gün içinde tüketildiklerini gösteren orandır. Orandaki azalma stok tutma maliyetlerindeki azalmayı ve verimli stok yönetimini ifade eder.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Alacak Tahsil Süresi",
+        "formul": "365/(Satış Gelirleri/Kısa Vadeli Ticari Alacaklar)",
+        "value": "Alacakların satıştan ortalama kaç gün sonra tahsil edildiğini gösteren orandır. Azalış müşterilerinin ödeme vadelerinin kısaldığına ya da daha etkin alacak yönetimi uygulandığına işaret eder ve olumludur.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Borç Ödeme Süresi",
+        "formul": "365/((Satışların Maliyeti+D.Sonu Stoklar-D.Başı Stoklar)/Ticari Borçlar)",
+        "value": "Şirketin borçlarını yıl içinde ortalama kaç günde ödediğini gösteren orandır. Artış, borç vadelerinin uzadığına işaret ederek, olumlu yorumlanabilir. Bununla birlikte şirket ödeme güçlüğü yaşadığı için de borçlarını daha geç ödüyor olabilir. Kaldıraç oranları ile birlikte değerlendirilmelidir.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Duran Varlık Devir Hızı",
+        "formul": "Satış Gelirleri/Maddi Duran Varlıklar",
+        "value": "İşletmenin duran varlıklarına yapmış olduğu yatırım ile ne kadar satış ürettiğini göstermektedir. Teoride yeni bir makine alımı, daha yüksek bir ciro yaratmalıdır. Bu sebeple orandaki artış olumludur. Ancak amortismanlar bu oranın yorumlanmasında dikkate alınmalıdır. Daha yeni duran varlıklara sahip bir şirket daha düşük bir orana sahip olacaktır. Ya da yeni bir duran varlık alımında oran düşecektir. Bu sebeple şirketler arası karşılaştırma yerine şirket içi trend analizinde kullanılır.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Dönen Varlık Devir Hızı",
+        "formul": "Satış Gelirleri/Dönen Varlıklar",
+        "value": "Dönen varlıkların kaç katı kadar satış hasılatı sağlandığını gösteren bir orandır. Verimlilik kıyaslamalarında kullanılsa da oranı etkileyecek faktörlerin çok sayıda olması net bir çıkarım yapılabilmesini engeller. Genel olarak artış olumludur.",
+        "isPositive": "Artış"
+      }
+    ]
+  },
+  {
+    "title": "Likidite Oranları",
+    "datas": [
+      {
+        "name": "Nakit Dönüş Süresi",
+        "formul": "Stok Elde Tutma Süresi+Alacak Tahsil Süresi-Boç Ödeme Süresi",
+        "value": "Nakit dönüş süresi şirketin işletme sermayesine yaptığı yatırımdan (ör. stok tedariği), müşterilerinden nakit ödeme aldığı ana kadar geçen süreyi ifade eder. Daha kısa bir dönüş süresi, daha yüksek likidite anlamına gelir ve olumludur.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Varlıkların Net Çalışma Sermayesine Oranı (Z score)",
+        "formul": "İşletme Sermayesi/Toplam Varlıklar",
+        "value": "İşletme sermayesi, dönen varlıklar ile kısa vadeli yükümlülükler arasındaki farktır ve kısa vadeli likiditeyi gösterir. Varlıklara oranla daha yüksek kısa vadeli likidite olumlu yorumlanır. Edward Altman'ın Z score modelinde kullanılan oranlardan biridir.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Stokların Net Çalışma Sermayesine Oranı",
+        "formul": "Stoklar/İşletme Sermayesi",
+        "value": "İşletme sermayesinin yüzde kaçının daha az likit olan stoklara bağlandığını gösterir. Yüksek bir oran, işletme sermayesinin yüksek oranda stoklara bağlandığını, dolayısıyla dönen varlıkların daha az likit olduğunu gösterir. Çok yüksek oranlarda günlük ödemelerin ancak stokların satışıyla mümkün olduğu düşünülebilir.",
+        "isPositive": "Azalış"
+      },
+   
+      {
+        "name": "Asit-Test-(Likidite Oranı)",
+        "formul": "(Dönen Varlıklar-Stoklar)/Kısa Vadeli Yükümlülükler",
+        "value": "Stoklar dönen varlıkların bir parçası olmakla birlikte likiditeye dönüşümleri zor ve maliyetlidir. Bu sebeple, dönen varlıklardan stokların çıkartılması sonucu kalan en likit varlıkların işletmenin 1 yıla kadarki borçlarını ödemeye yetip yetmeyeceği asit-test oranı ile hesaplanır. Cari orandan daha hassas bir ölçüm yapmaya imkan verir. Artış likidite açısından olumludur.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Nakit Oranı",
+        "formul": "(Nakit ve Nakit Benzerleri+Menkul Kıymetler) / Kısa Vadeli Yükümlülükler",
+        "value": "İşletmenin elindeki en likit varlık olan nakit ve nakit benzerlerinin, 1 yıldan kısa vadeli yükümlülüklerin yüzde kaçını karşıladığını gösteren orandır. Artış likidite açısından olumlu karşılanmakla birlikte, çok yüksek bir oran eldeki nakdin atıl tutulduğu yorumuna da sebep olabilir.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Defansif Interval Oranı",
+        "formul": "(Dönen Varlıklar-Stoklar)/ Günlük Nakit Harcamaları",
+        "value": "Ek nakit girişi olmadan, işletmenin elindeki likit varlıklarla günlük ticari ödemelerini kaç gün daha karşılayabileceğini gösteren orandır. Artış olumludur. Günlük nakit harcamaları; gelir tablosunda yer alan satışların maliyeti, genel yönetim giderleri, pazarlama ve satış giderleri, arge ve diğer faaliyet giderlerinin günlük ortalamasını ifade etmektedir.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Stok Bağımlılık Oranı",
+        "formul": "(Kısa Vadeli Yükümlülükler-Nakit ve Nakit Benzerleri-Kısa Vadeli Ticari Alacaklar)/Stoklar",
+        "value": "İşletmenin kısa vadeli borçlarını ödeyebilmek için stokların yüzde kaçını satması gerektiğini ölçen orandır. Oranın mantığındaki varsayıma göre, kısa vadeli borçların ödenmesinde önce eldeki nakit kullanılacak, kalan miktar ticari alacaklardan tahsil edilecek tutarlarla ödenecek, geri kalan borçların ödenmesi için ise stokların satılması gerekecektir. Bu varsayım her zaman doğru olmamakla birlikte orandaki azalma olumlu algılanır.",
+        "isPositive": "Azalış"
+      }
+    ]
+  },
+  {
+    "title": "Kaldıraç Oranları",
+    "datas": [
+      {
+        "name": "Özkaynağın Borca Oranı",
+        "formul": "Özkaynaklar/Toplam Yükümlülükler",
+        "value": "İşletmenin iç kaynağı olan özkaynaklar ile dış kaynağı olan yükümlülüklerin en geniş perspektiften karşılaştırılması bu oran ile yapılır. Özkaynakların borçları ödemeye yetip yetmediği görülebilir. İç kaynakların yoğun olması ve oranın artış trendinde olması olumlu yorumlanır. Borcun Özkaynağa oranı ile aynı mantığa dayansa da Edward Altman Z score hesaplamasında bu formülasyon tercih etmiştir.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Toplam Borcun Özkaynağa Oranı-Geniş Yorum",
+        "formul": "Toplam Yükümlülükler/Özkaynaklar",
+        "value": "Borcun özkaynağa oranı ile aynı mantığa dayanmakta olup farklı formüle edilmiş halidir. İşletmenin iç kaynakları olan özkaynaklar ile dış kaynağı olan yükümlülüklerin karşılaştırmasıdır. İç kaynakların yoğun olması ve oranın azalış trendinde olması olumlu yorumlanır.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Finansal Borcun Özkaynağa Oranı",
+        "formul": "Faiz Yükü Olan Toplam Yükümlülükler/Özkaynaklar",
+        "value": "İşletme için en maliyetli ve riskli borcu finansal borçlardır. Bu sebeple daha dar bir borçluluk ölçümü için finansal borçların özkaynaklara oranı incelenebilir. Özkaynakarın finansal borçları karşılamaya yetip yetmediği görülebilir. Bu oran şirketler arası incelemede de daha doğru sonuçlar verebilir. Oranın azalış trendinde olması olumludur.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Borcun Net Maddi Değere Oranı",
+        "formul": "Toplam Yükümlülükler/(Özkaynaklar-Maddi Olmayan Duran Varlıklar)",
+        "value": "Maddi olmayan duran varlıklar (lisans kullanım hakları, şerefiye vb.) borç verenlere ödeme yapılırken tekrar likiditeye dönüştürülemez. Bu sebeple daha muhafazakar bir borç oranı için maddi olmayan duran varlıklar özsermayeden çıkartılır ve toplam yükümlülüklerle kıyaslanır. Orandaki azalış olumlu yorumlanır.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Finansal Borcun Varlıklara Oranı-Dar Yorum",
+        "formul": "Faiz Yükü Olan Toplam Yükümlülükler/Toplam Varlıklar",
+        "value": "Şirketin finansal borç yükünü ölçmek ve işletmeler arası borçluluk ve risk kıyaslamasını daha hassas yapabilmek için finansal kaldıraç oranında toplam borç yerine finansal borç kullanılabilir. Orandaki azalış olumludur.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Finansal Borcun Kapital Oranı",
+        "formul": "Faiz Yükü Olan Toplam Yükümlülükler/Faiz Yükü Olan Toplam Yükümlülükler + Özsermaye",
+        "value": "Şirketin özkaynakları ve finansal borçları, şirketin mali kaynaklarını oluşturur. Bu kapital içerisinde finansal borçların ağırlığı ne kadar az olursa, şirketin finansal riski ve kapital maliyeti de o ölçüde azalabilir. Oranın azalışı olumludur.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Varlıların Özkaynağa Oranı",
+        "formul": "Toplam Varlıklar/Toplam Özkaynaklar",
+        "value": "Özkaynağın varlıklara oranının ters formüle edilmiş halidir. Aynı mantıksal ölçüm yapılmaktadır. Azalış olumludur.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Özkaynağın Varlıklara Oranı",
+        "formul": "Toplam Özkaynaklar/Toplam Varlıklar",
+        "value": "Varlıkların yüzde kaçının özkaynaklar ile finanse edildiğini ölçen bir orandır. Temelde finansal kaldıraç oranı ile aynı şeyi ölçmektedir. Formülde yükümlülük yerine özkaynak kullanılmaktadır ancak Özkaynak + Yükümlülükler = Varlıklar temel prensibi sebebiyle aynı mantıksal ölçüm yapılmaktadır. Bazı analistlerce tercih edilen bir formülasyondur. Artış olumludur.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Kısa Vadeli Borcun Varlıklara Oranı",
+        "formul": "Kısa Vadeli Yükümlülükler/Toplam Varlıklar",
+        "value": "Kısa vadeli borçlar vade süreleri 1 yıldan daha kısa olan borçları ifade eder. Varlık finansmanında kısa vadeli borçların daha fazla kullanılması şirketi borç çevirim güçlüğü ve likidite sıkıntısına sokabilir. Bu sebeple oranın azalması olumlu yorumlanır. Bununla birlikte fazla borç yükü olmayan bir şirketin kısa vadeli fonlar kullanması uzun vadeli fonlara göre daha az maliyetli olacağı için tercih edilebilir.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Kısa Vadeli Borcun Toplam Borca Oranı",
+        "formul": "Kısa Vadeli Yükümlülükler/Toplam Yükümlülükler",
+        "value": "Toplam borç içerisinde kısa vadeli borçların artması şirketi daha kısa vadelerde ödeme yapmaya zorlayacaktır. Bu durum borcun borçla finansmanı sonucu doğurarak, faiz giderlerini arttırabilir. Özellikle kaldıraç oranı yüksek olan şirketlerde bu oranın da artış trendinde olması istenmez. Azalış olumlu yorumlanır.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Kısa Vadeli Borcun Özkaynaklara Oranı",
+        "formul": "Kısa Vadeli Yükümlülükler/Özkaynak",
+        "value": "Genellikle farklı şirketlerin kısa vadeli borç seviyelerini kıyaslamak için tercih edilir. Şirketin özkaynaklarına kıyasla kullandığı kısa vadeli kaynak bu oranla belirlenir. Azalış olumludur.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Kısa Vadeli Finansal Borcun Kısa Vadeli Borca Oranı",
+        "formul": "Kısa Vadeli Finansal Borçlar/Kısa Vadeli Yükümlülükler",
+        "value": "Kısa vadeli borçlar içinde esas risk ve maliyet yaratan borç türü finansal borçlardır. Kısa vadeli finansal borçların kısa vadeli yükümlülükler içindeki payının artması riskleri ve maliyetleri arttırır. Azalış olumludur. ",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Kısa Vadeli Finansal Borcun Satışlara Oranı",
+        "formul": "Kısa Vadeli Finansal Borçlar/Satışlar",
+        "value": "Kısa vadeli finansal borçların artan oranda satışları finanse etmesi, faiz gideri yaratarak karlılığı düşürür. Bu durumda likidite problemlerine yol açabilir. Azalış olumludur.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Toplam Finansal Borcun Toplam Borca Oranı",
+        "formul": "Toplam Finansal Borç/Toplam Yükümlülükler",
+        "value": "Kısa ve uzun vade toplam finansal borç yükünün toplam borçluluktaki payının artması riskleri ve maliyetleri arttırır. Aynı borç/varlık oranına sahip iki firmadan finansal borç/toplam borç oranı yüksek olan daha risklidir. Azalış olumludur.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Finansal Borçları Karşılama Oranı",
+        "formul": "Faaliyet Karı/ Toplam Finansal Yükümlülükler",
+        "value": "Üretilen faaliyet karının toplam finansal yükümlülükleri karşılama oranı ile alınan borçlar ve o borçların üretim sonrası yarattığı değer ölçülmektedir. Orandaki artış borçların daha etkin kullanılarak daha yüksek karlılık ürettiği gösterdiği için olumludur.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Net Borç/FAVÖK",
+        "formul": "Net Borç/FAVÖK",
+        "value": "Net borç, toplam finansal borçlardan eldeki nakdin çıkartılmasıyla bulunur ve şirketin reel borcunu gösterir. Net borcun FAVÖK' e kıyasla azalması ya da FAVÖK' ün daha fazla artması istenir. Bu sebeple azalış olumludur.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Duran Varlıkların Kısa Vadeli Yükümlülüklere Oranı",
+        "formul": "Duran Varlıklar/Kısa Vadeli Yükümlülükler",
+        "value": "Finansman prensibine göre duran varlıkların finansmanında uzun vadeli kaynaklar, dönen varlıkların finansmanında kısa vadeli kaynaklar kullanılmalıdır. Orandaki artış duran varlıkların kısa vadeli kaynaklardan bağımsız arttığını göstereceği için olumludur.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Duran Varlıkların Devamlı Sermayeye Oranı",
+        "formul": "Duran Varlıklar/Uzun Vadeli Yükümlülükler+Özkaynak",
+        "value": "Duran varlık finansmanı devamlı sermaye (uzun vadeli kaynaklar + özkaynaklar) ile yapılmalıdır. Oran, duran varlıkların finansmanında yüzde kaç devamlı sermaye kullanıldığı gösterir. Oranın 1'in altında olması tüm duran varlıkların devamlı sermaye ile karşılandığını gösterir. Azalış olumludur.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Faizleri Karşılama Oranı",
+        "formul": "Faiz ve Vergi Öncesi Kar/Finansal Giderler",
+        "value": "İşletmenin yıllık faiz yükünü ne ölçüde karşılayabildiği göstermektedir. Faiz ve vergi öncesi kar finansal giderlerden büyük olmalıdır. Orandaki artış olumludur.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Net Borç",
+        "formul": "Toplam Finansal Borç-Eldeki Nakit ve Nakit Benzerleri",
+        "value": "Net borç, toplam finansal borçlardan eldeki nakdin çıkartılmasıyla bulunur ve şirketin reel borcunu gösterir.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Finansal Giderlerin FAVÖK Oranı",
+        "formul": "Finansal Giderler/FAVÖK",
+        "value": "Bu oran yıllıklandırılmış olarak hesaplanmakta ve faizleri karşılama oranına yıllık bir perspektif vermektedir. Yıllıklandırılmış finansal giderler yıllıklandırılmış FAVÖK ile kıyaslanarak işletmenin faiz yükü dönemsellikten arındırılmış olarak incelenebilir. FAVÖK' ün finansal giderlerden büyük olması gerekmektedir ve azalış olumludur.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Net Finansal Giderlerin FAVÖK Oranı",
+        "formul": "Net Finansal Giderler/FAVÖK",
+        "value": "Net finansal giderler, finansal giderlerden finansal gelirlerin çıkartılmasıyla elde edilir ve kalan faiz yükünü gösterir. Yıllıklandırılmış olarak hesaplanan ve daha hassas bir ölçüm sunun oran sayesinde dönemsel etkiler yerine genel trend izlenebilir. FAVÖK' ün net finansal giderlerden büyük olması ve gerekmektedir ve azalış olumludur.",
+        "isPositive": "Azalış"
+      }
+    ]
+  },
+  {
+    "title": "Karlılık Oranları",
+    "datas": [
+      {
+        "name": "Kümülatif Varlık Karlılığı",
+        "formul": "(Geçmiş Yıl Karları+Yedekler)/Toplam Varlıklar",
+        "value": "İşletmenin dağıtılmayan karları ile zararları, geçmiş yıl karları ve yedekler kalemlerinde incelenir. Bu kalemlerin büyüklüğü işletmenin geçmiş performansları hakkında bilgi verir. Belirtilen kalemler daha eski firmalarda daha büyük olduğu için oran, eski firmalara avantaj sağlar. Ancak bu yeni firmaların iflasa daha yatkın olmaları sebebiyle istenen bir özelliktir. Edward Altman'ın Z score modelinde kullanılan oranlardan biridir. Artış aktif karlılığı açısından olumludur.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Brüt Kar Marjı",
+        "formul": "Brüt Kar/Satışlar",
+        "value": "Brüt kar, satışlardan satışların maliyeti düşülerek hesaplanır. Satışların maliyeti ise, ürünlerin üretimiyle ilgi tüm masrafları (hammadde, malzeme, direk işçilik vb.) içerir. Brüt kar marjı ise bu maliyetten sonra kalan karın satışlara oranlanmasıyla bulunur ve artış olumludur. Artış, daha çok satış yapılması, daha yüksek fiyatlı satış yapılması ya da daha ucuz üretim maliyeti gibi unsurlardan kaynaklanabilir.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "FAVÖK Marjı",
+        "formul": "FAVÖK/Satışlar",
+        "value": "FAVÖK- Faiz, amortisman, vergi öncesi kar demektir (İng.- EBITDA). Brüt kar marjından faaliyet giderlerinin (satış, ARGE, yönetim giderleri) düşülmesi ve amortismanın eklenmesi yolu ile bulunur. Amortisman duran varlıkların kullanımları sebebiyle oluşan yıpranma payıdır ancak bir nakit çıkışı yaratmamaktadır. Bu sebeple eklenir ve FAVÖK ile sadece operasyonel faaliyetlerin yarattığı kar incelenebilmiş olur. FAVÖK marjı ise FAVÖK' ün satışlara bölünmesiyle bulunur ve artış olumludur.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Faaliyet Kar Marjı",
+        "formul": "Faaliyet Karı/Satışlar",
+        "value": "Faaliyet Karı, amortisman giderlerini ve diğer faaliyet gelir ve giderlerini de kapsar ve genel işletme ticari faaliyetleri sonucu yaratılan karı gösterir. Faaliyet kar marjı, faaliyet karının satışlara bölünmesiyle bulunur ve artış olumludur.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Net Kar Marjı",
+        "formul": "Net Kar/Satışlar",
+        "value": "Net kar, şirketin dönemsel tüm gelirlerinden tüm giderleri çıkartıldıktan sonra kalan kardır. Net karın ana ortaklık payları ve azınlık payları olarak iki kısmı bulunur. Ana ortaklık payları şirketin kendi ürettiği karı ve ortağı olduğu şirketlerin kendi payına düşen karının toplamını verir. Azınlık payları ise, %50 den fazla ortak olduğu şirketlerde üretilen ve kendi hissesi dışında kalan karların toplamıdır. Bu sebeple oran analizlerinde ana ortaklık paylarını kullanmak daha sağlıklı sonuç verecektir. ",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Varlık Getirisi",
+        "formul": "FVÖK/Toplam Varlıklar",
+        "value": "Firmanın toplam yatırımlarının karlılığını gösterir. Ölçümde FVÖK kullanılmasının sebebi, hem borcun hem de özsermayenin yarattığı karın ölçütü olmasıdır. Bununla birlikte kimi kaynaklarda FVÖK yerine net kar ya da faaliyet karı kullanıldığı görülebilir. Önemli olan nokta kıyaslamaları yaparken aynı formülasyonun kullanılmasıdır. Aktif karlılığı DuPont analizi formülasyonuna göre karlılık ve verimlilikte yaşanan değişimler sonucunda artar ya da azalır.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Özkaynak Getirisi",
+        "formul": "Net Kar/Özkaynak",
+        "value": "Şirkete özkaynak olarak yapılan yatırımdan elde edilen karı göstermektedir. Özkaynak karlılığı DuPont analizi olarak bilinen formülasyona göre karlılık, verimlilik ve borçlulukta(kaldıraç) meydana gelen değişimler sebebiyle artar ya da azalır. Özkaynak getirisinin mevduat faiz oranlarından yüksek olması fırsat maliyeti yaratmaması açısından gereklidir.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Yıllıklandırılmış Net Operasyonel Kar (NOPLAT)",
+        "formul": "FVÖK-FVÖK Üzerinden Vergi",
+        "value": "Net operasyonel kar, FVÖK' den vergi oranı kadar kesinti yapılarak bulunur. Buradaki vergi oranı ise ödenen tüm vergi değil FVÖK' e oranlanmış vergi miktarıdır.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Yıllıklandırılmış Ort. Toplam Kapital Getirisi (ROIC)",
+        "formul": "Net Faaliyet Karı/ Maddi Duran Varlıklar+İşletme Sermayesi-Nakit ve Nakit Benzerleri",
+        "value": "ROIC olarak bilinen toplam kapital getirisi, net operasyonel karın yatırım yapılmış kapitale oranlanmasıyla bulunur. Burada paydada yer alan kapitalin nasıl hesaplanması gerektiği hakkında geniş bir literatür bulunsa da en çok kabul gören yöntem maddi duran varlıklara işletme sermayesinin eklenmesi (working capital) ve nakitlerin düşülmesi ile elde edilendir.",
+        "isPositive": "Artış"
+      }
+    ]
+  },
+  {
+    "title": "Büyüme",
+    "datas": [
+      {
+        "name": "Yıllık Satış Büyümesi",
+        "formul": "Yıllık Satış Büyümesi",
+        "value": "Yıllık ciro artışı, satışların geçen seneden bu seneye yüzde kaç arttığını gösterir.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Enflasyon Düzeltmesi Sonrası Yıllık Satış Büyümesi",
+        "formul": "Enflasyon Düzeltmesi (TÜFE) Sonrası Yıllık Satış Büyümesi",
+        "value": "Yıllık ciro artışı satışların reel büyümesinden kaynaklanabileceği gibi, enflasyon sebepli oluşan fiyat artışından da kaynaklanabilir. Ciro artışının sebebini anlayabilmek için ciro artışı üzerinde enflasyon düzeltmesi yapılır ve reel büyüme bulunur.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Yıllık Net Kar Büyümesi",
+        "formul": "Yıllık Net Kar Büyümesi",
+        "value": "Yıllık net kar büyümesi, net karın geçen seneden bu yana yüzde kaç arttığını gösterir.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Enflasyon Düzeltmesi Sonrası Yıllık Net Kar Büyümesi",
+        "formul": "Enflasyon Düzeltmesi (TÜFE) Sonrası Yıllık Net Kar Büyümesi",
+        "value": "Net kar üzerinde enflasyon düzeltmesi yapmak, cirodaki kadar anlamlı olmasa da, reel artışı görebilmek amacıyla kimi analistlerce kullanılmaktadır.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Finansman prensibi",
+        "formul": "Delta(Duran Varlıklar/Kısa Vadeli Yükümlülükler)>Delta(Duran Varlıklar/(Uzun Vadeli Yükümlülükler+Özkaynak)",
+        "value": "Finansman prensibine göre duran varlıkların finansmanında uzun vadeli kaynaklar, dönen varlıkların finansmanında kısa vadeli kaynaklar kullanılmalıdır.",
+        "isPositive": "Artış"
+      }
+    ]
+  },
+  {
+    "title": "DuPont Analizi",
+    "datas": [
+    
+      {
+        "name": "Karlılık",
+        "formul": "Net Kar/Net Satışlar",
+        "value": "Net kar, şirketin dönemsel tüm gelirlerinden tüm giderleri çıkartıldıktan sonra kalan kardır. Net karın ana ortaklık payları ve azınlık payları olarak iki kısmı bulunur. Ana ortaklık payları şirketin kendi ürettiği karı ve ortağı olduğu şirketlerin kendi payına düşen karının toplamını verir. Azınlık payları ise, %50 den fazla ortak olduğu şirketlerde üretilen ve kendi hissesi dışında kalan karların toplamıdır. Bu sebeple oran analizlerinde ana ortaklık paylarını kullanmak daha sağlıklı sonuç verecektir.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Verimlilik",
+        "formul": "Net Satışlar/Toplam Varlıklar",
+        "value": "Şirketin varlıklarını ne ölçüde verimli kullanarak ne kadar satış üretebildiğini ölçer. Oranın artması varlıklarla daha fazla satış üretilebildiği anlamı taşıdığı için olumludur ve verimlilik artışı olarak yorumlanır. Edward Altman'ın Z score modelinde kullanılan oranlardan biridir.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Kaldıraç",
+        "formul": "Toplam Varlıklar/Özkaynak",
+        "value": "Özkaynağın varlıklara oranının ters formüle edilmiş halidir. Aynı mantıksal ölçüm yapılmaktadır. Azalış olumludur.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Aktifler Getirisi",
+        "formul": "FVÖK/Toplam Varlıklar",
+        "value": "Şirketin toplam yatırımlarının karlılığını gösterir. Ölçümde FVÖK kullanılmasının sebebi, hem borcun hem de özsermayenin yarattığı karın ölçütü olmasıdır. Bununla birlikte kimi kaynaklarda FVÖK yerine net kar ya da faaliyet karı kullanıldığı görülebilir. Önemli olan nokta kıyaslamaları yaparken aynı formülasyonun kullanılmasıdır. Aktif karlılığı DuPont analizi formülasyonuna göre karlılık ve verimlilikte yaşanan değişimler sonucunda artar ya da azalır.",
+        "isPositive": "Artış"
+      }
+    ]
+  },
+  {
+    "title": "Nakit Akış Tablosu Oranları",
+    "datas": [
+      {
+        "name": "Faaliyetlerden Elde Edilen Nakit Akışları Büyümesi",
+        "formul": "Faaliyetlerden Elde Edilen Nakit Akışları Büyümesi",
+        "value": "Şirket ticari faaliyetlerinin nakit yaratma gücü önemli bir başarı kriteridir. Faaliyetlerden yaratılan nakit finansal yükümlülükleri ödeyecek en önemli kaynaktır. Negatif faaliyet nakit akışı firmayı borçlanmaya mecbur edecek ve faiz giderlerini arttırarak karlılığı olumsuz etkileyecektir. Artış olumludur.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Enflasyon Sonrası Faaliyetlerden Elde Edilen Nakit Akışları Büyümesi",
+        "formul": "Enflasyon Sonrası Faaliyetlerden Elde Edilen Nakit Akışları Büyümesi",
+        "value": "Enflasyon etkisinden arındırılmış pozitif reel faaliyet nakit akışı büyümesi, işletmenin başarılı bir ticari faaliyet yürüttüğünü göstermektedir. Artış olumludur.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Nakit Bazlı Faiz Kazanma Oranı",
+        "formul": "Esas Faaliyetlerden Yaratılan Nakit / Faiz(Finansman Gideri)",
+        "value": "Şirketin sürdürülebilir borç ödeme kabiliyetinin olabilmesi için finansal giderlerini faaliyetlerden sağladığı nakit ile ödeyebiliyor olması gerekir. Bu oranın yetersiz veya negatif olması durumunda şirket daha fazla borçlanma ihtiyacına girebilir. Artış olumludur.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Toplam Nakit Açığı / Kısa Vadeli Finansal Borç",
+        "formul": "Faaliyet Nakit Açığı+Yatırım Nakit Açığı/ Kısa Vadeli Finansal Borç",
+        "value": "Faaliyet ve yatırımlardan kaynaklı nakit açığı ne kadar az kısa vadeli finansal borçla finanse edilirse, firmanın borç çevirim kabiliyeti o kadar artar ve likidite sıkıntısı yaşanma ihtimali azalır. Azalış olumludur.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Net İşletme Sermayesinin Faaliyetlerden Sağlanan Fonlara Oranı",
+        "formul": "(Dönen Varlıklar-Kısa Vadeli Yükümlülükler)/İşletme faaliyetlerinden nakit akışları",
+        "value": "Faaliyetlerden yaratılan fonlar ile işletme sermayesinin ne kadar desteklendiğini gösterir. Orana göre faaliyet nakış akışı arttıkça oran azalacak, yani faaliyetlerden yaratılan fonlar işletme sermayesini daha fazla finanse edebilecektir. Oran negatif olursa anlamsızdır. Ancak hem işletme sermayesi hem de faaliyet nakit akışı negatif ise oran yine pozitif olacaktır. Bu duruma da dikkat edilmelidir. Oran sadece iki değerin de pozitif olduğu durumlarda anlamlı sonuçlar verebilir.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "Faaliyetlerden sağlanan fon / Kısa vadeli yabancı kaynaklar oranı",
+        "formul": "İşletme faaliyetlerinden nakit akışları/Kısa Vadeli Yükümlülükler",
+        "value": "Oran işletme faaliyetleri sonucu yaratılan nakdin kısa vadeli yabancı kaynakların ne kadarlık kısmını karşıladığını gösterir. Artış olumludur.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Serbest nakit akışı",
+        "formul": "Faaliyetlerden sağlanan nakit-yatırmlara harcanan nakit",
+        "value": "Serbest nakit akışı, işletme faaliyetleri sonucu yaratılan nakitten yatırım harcamaları için kullanılan nakdin düşülmesi sonucu kalan eldeki nakit tutarıdır. Global derecelendirme şirketleri bazı düzeltmeler yaparak, serbest nakit akımının daha hassas versiyonlarını kullanmaktadırlar. Ancak genel bilgi vermesi açısından bu versiyon da kullanılabilir. Serbest nakit akışı pozitif olursa finansman için borçlanmaya ihtiyaç kalmayacaktır.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Serbest Nakit Akımı/Satışlar",
+        "formul": "(Faaliyetlerden sağlanan nakit-yatırmlara harcanan nakit)/Satışlar",
+        "value": "Serbest nakit akımının satışları ne kadar finanse edebildiğini gösterir. Artış olumludur.",
+        "isPositive": "Artış"
+      }
+    ]
+  },
+  {
+    "title": "Gauge Value",
+    "datas": [
+
+      {
+        "name": "Toplam Borcun Varlıklara Oranı (Finansal Kaldıraç)-Geniş Yorum",
+        "formul": "Toplam Yükümlülükler/Toplam Varlıklar",
+        "value": "Finansal kaldıraç oranı olarak da bilinen borcun varlıklara oranı, işletmenin finansmanında kullanılan toplam borç ağırlığını gösterir. İşletmenin finansmanında artan düzeyde borç kullanılması riskli olabileceği için, orandaki azalış olumlu yorumlanır.",
+        "isPositive": "Azalış"
+      },
+      
+     
+      
+      {
+        "name": "ROE",
+        "formul": "Net Kar/Özkaynak",
+        "value": "Return on Equity (ROE) özkaynak getirisi anlamına gelmektedir. Özkaynak getirisi, şirkete özkaynak olarak yapılan yatırımdan elde edilen karı göstermektedir. Detaylı inceleme için bkz. DuPont Analizi.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "ROCE",
+        "formul": "Yıllıklandırılmış FVÖK/ (Toplam Varlıklar- Kısa Vadeli Yükümlülükler)",
+        "value": "Return on Capital Employed (ROCE) bir karlılık metriğidir. Kullanılan sermayenin yarattığı getiriyi ölçmek için kullanılır. ROCE şirket tarafından karlılık üretmek için kullanılan borcu da hesaba katmaktadır ve daha yüksek bir ROCE daha karlı bir şirket anlamı taşımaktadır.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "WACC",
+        "formul": "AOSM = wd x kd x (1-T) + ws x ks (wd-Borç oranı, kd-Borç maliyeti, ws-özkaynak oranı, ks-özkaynak maliyeti, T- vergi oranı)",
+        "value": "Weighted Average Cost of Capital (WACC), ağırlıklı ortalama sermaye maliyeti kavramı finans literatüründeki çok önemli kavramlardan bir tanesidir. Firmanın sermaye maliyeti, borç ve özkaynak yatırımcılarının talep ettiği getirilerin ağırlıklı ortalamasıdır. Firmanın ağırlıklı ortalama sermaye maliyeti, firmanın sermaye bileşimini oluşturan borç ve özkaynak maliyetine ve bileşim içindeki oransal dağılımına göre değişir. WACC artışı şirketin daha maliyetli bir şekilde sermaye sağladığını göstereceği için yatırımcılar için istenmemektedir. \nHesaplamanın iki önemli bileşeni özkaynak maliyeti ve borç maliyetidir. Özkaynak maliyeti Gordon Büyüme Modeli ile ya da Mali Varlıkları Fiyatlama Modeli (CAPM) ile tespit edilir. F-Ray sistemlerinde CAPM metodolojisi kullanılmıştır. Bu metodolojiye göre, özkaynak maliyeti ks = Rf + Bi (Rm-Rf) formülüyle hesaplanır. Rf- risksiz faiz oranı olan 10 yıllık tahvili, Bi hisse senedinin endeks eğimi olan Beta değerini, (Rm-Rf) ise yatırımcıların borsada yatırım yapmak için talep edecekleri minimum risk primini göstermektedir. F-Ray sistemlerinde risk primi olarak uluslararası kuruluşların hesaplamaları baz alınmaktadır.  Borç maliyeti hesaplamasında ise, yine literatürde çok farklı yöntemler bulunsa da F-Ray sistemlerinde varsayımsal bilanço yöntemi tercih edilmiştir. Bu yöntem hakkında bazı tartışmalar bulunduğunu, bununla birlikte sistemlerimizde borç maliyeti hesaplamasını mümkün kılan pratik bir yöntem olması sebebiyle seçildiğini belirtiriz.",
+        "isPositive": "Azalış"
+      },
+      {
+        "name": "ROIC_2",
+        "formul": "NOPLAT / (Sermaye Tabanı)",
+        "value": "ROIC formülasyonu akademik kabul gören yöntemle F-Ray platfomunda hesaplanmaktadır. (bkz ROIC) Bununla birlikte WACC karşılaştırmalarında anlam ifade edebilmesi için formülasyonda kullanılan sermaye tabanı, WACC hesaplaması ile paralel hale getirilerek ROIC_v2 sürümü de hesaplanmıştır. Bu sayede yatırımcılar kapital maliyeti olan WACC ile kapital getirisi olan ROIC_v2 kıyaslaması yaparak değer üreten şirketleri daha kolay tespit edebilirler. Bu versiyonda kullanılan formülasyonda sermaye tabanı kısa vadeli borç + uzun vadeli borç + özkaynak toplamından oluşmaktadır. Bu sayede WACC hesaplamasına paralellik gösterir. Literatürdeki bilinen ROIC hesaplamasında ise net yatırım tutarı olan (Duran varlıklar + İşletme Sermayesi (WC) -Nakit) formülü sermaye tabanı hesaplamasında kullanılmaktadır.",
+        "isPositive": "Artış"
+      }
+    ]
+  },
+  {
+    "title": "Scoring",
+    "datas": [
+      
+      {
+        "name": "Özkaynak Devir Hızı",
+        "formul": "Satış Gelirleri/Özkaynak",
+        "value": "Özkaynakların ne kadar verimli bir şekilde satışa dönüştüğünü göstermektedir. Her ne kadar artış olumlu yorumlansa da özkaynak düşüşü de oranı arttırabilir. Özkaynak düşüşü ise borç artışı anlamı taşıyabileceğinden, oranın yorumlanmasında dikkatli olunmalıdır. Özsermayesi yeterli seviyede olan bir şirket için artış olumludur.",
+        "isPositive": "Artış"
+      },
+      
+      {
+        "name": "Varlık Getirisi (Aktif Karlılığı)",
+        "formul": "FVÖK/Toplam Varlıklar",
+        "value": "Firmanın toplam yatırımlarının karlılığını gösterir. Ölçümde FVÖK kullanılmasının sebebi, hem borcun hem de özsermayenin yarattığı karın ölçütü olmasıdır. Bununla birlikte kimi kaynaklarda FVÖK yerine net kar ya da faaliyet karı kullanıldığı görülebilir. Önemli olan nokta kıyaslamaları yaparken aynı formülasyonun kullanılmasıdır. Aktif karlılığı DuPont analizi formülasyonuna göre karlılık ve verimlilikte yaşanan değişimler sonucunda artar ya da azalır.",
+        "isPositive": "Artış"
+      },
+
+      {
+        "name": "Cari Oran",
+        "formul": "Dönen Varlıklar/Kısa Vadeli Yükümlülükler",
+        "value": "İşletmenin likit varlıklarıyla, 1 yıldan kısa vadeli borçlarını ödeyeyip ödeyemeyeceğini gösterir ve temel likidite oranlarından biridir. Orandaki artış likidite açısından olumludur. Bununla birlikte, çok yüksek oranlar likiditenin yatırıma yönlendirilmediği sonucunu doğurarak verimsizlik olarak yorumlanabilir.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Asit-Test (Likidite Oranı)",
+        "formul": "(Dönen Varlıklar-Stoklar)/Kısa Vadeli Yükümlülükler",
+        "value": "Stoklar dönen varlıkların bir parçası olmakla birlikte likiditeye dönüşümleri zor ve maliyetlidir. Bu sebeple, dönen varlıklardan stokların çıkartılması sonucu kalan en likit varlıkların işletmenin 1 yıla kadarki borçlarını ödemeye yetip yetmeyeceği asit-test oranı ile hesaplanır. Cari orandan daha hassas bir ölçüm yapmaya imkan verir. Artış likidite açısından olumludur.",
+        "isPositive": "Artış"
+      },
+      {
+        "name": "Borcun Varlıklara Oranı(Finansal Kaldıraç)-Geniş Yorum",
+        "formul": "Toplam Yükümlülükler/Toplam Varlıklar",
+        "value": "Finansal kaldıraç oranı olarak da bilinen borcun varlıklara oranı, işletmenin finansmanında kullanılan toplam borç ağırlığını gösterir. İşletmenin finansmanında artan düzeyde borç kullanılması riskli olabileceği için, orandaki azalış olumlu yorumlanır.",
+        "isPositive": "Azalış"
+      }
+    ]
+  }
+]

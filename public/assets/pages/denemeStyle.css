@@ -1,0 +1,9 @@
+.gray-container {
+    background: #292e33;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding: 25px; }
