@@ -5,6 +5,7 @@ import { Button } from "primereact/button";
 import classNames from 'classnames';
 import AuthContext from './context/AuthContext'
 import useAxios from './utils/useAxios';
+import { ColorBox } from 'devextreme-react';
 
 const AppTopbar = (props) => {
 	const [Companys, setCompany] = useState([])
@@ -101,12 +102,17 @@ const AppTopbar = (props) => {
 							</ul>
 						</li>
 						<div>
-							<Button label="Anasayfa" style={{ marginLeft: '50px', top: '-10px' }} onClick={goDashboard} className="p-button-plain p-button-lg p-button-text" />
-							<Button label="Blog" style={{ marginLeft: '50px', top: '-10px' }} onClick={() => history.push('/blog')} className="p-button-plain p-button-lg p-button-text" />
+							<Button label="Anasayfa" style={{ marginLeft: '40px', top: '-10px' }} onClick={goDashboard} className="p-button-plain p-button-lg p-button-text" />
+							<Button label="Tüm Coinler" style={{ marginLeft: '40px', top: '-10px' }} onClick={() => history.push('/allCoins')} className="p-button-plain p-button-lg p-button-text" />
+							<Button label="Endeksler" style={{ marginLeft :'40px', top:'-10px' }} onClick= {()=> history.push('/indicates')} className="p-button-plain p-button-lg p-button-text"/>
+							<Button label="Sektörler" style={{ marginLeft: '40px', top:'-10px'}} onClick={()=> history.push('/sectors')} className="p-button-plain p-button-lg p-button-text"/>
+							<Button label="Haberler" style={{ marginLeft:'40px',top:'-10px'}} onClick={()=> history.push('/news')} className="p-button-plain p-button-lg p-button-text"/>
+							<Button	label="Al/Sat" style={{marginLeft:'40px',top:'-10px'}} onClick={()=> history.push('/alarms')} className="p-button-plain p-button-lg p-button-text"/>
+							<Button label="Portfolyo" style={{marginLeft:'40px',top:'-10px'}} onClick={()=>history.push('/portfolio')} className="p-button-plain p-button-lg p-button-text"/>
 							<AutoComplete
 								style={{ left: '10%', top: '-5px' }}
 								size={50}
-								placeholder="500 hisse içinde ara..."
+								placeholder="Coinler içinde ara..."
 								value={selectedCompany}
 								suggestions={filteredCompanys}
 								completeMethod={searchCompany}
@@ -116,6 +122,7 @@ const AppTopbar = (props) => {
 								onSelect={(e) => history.push(`/company/${e.value.code}`)}
 								onChange={(e) => setSelectedCompany(e.value)} />
 						</div>
+						
 					</ul>
 				</div>
 			</div>
