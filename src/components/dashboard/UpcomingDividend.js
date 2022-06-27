@@ -9,12 +9,12 @@ export const UpcomingDividend = () => {
     let api = useAxios()
 
     let mockDividents = [
-        { sembol: "TLMAN", data: "20 Aralık", pay: "2.4596", yüzde: "%5,75" },
-        { sembol: "TLMAN", data: "20 Aralık", pay: "2.4596", yüzde: "%5,75" },
-        { sembol: "TLMAN", data: "20 Aralık", pay: "2.4596", yüzde: "%5,75" },
-        { sembol: "TLMAN", data: "20 Aralık", pay: "2.4596", yüzde: "%5,75" },
-        { sembol: "TLMAN", data: "20 Aralık", pay: "2.4596", yüzde: "%5,75" },
-        { sembol: "TLMAN", data: "20 Aralık", pay: "2.4596", yüzde: "%5,75" },
+        { sembol: "BTC", data: "--haziran", pay: "-.-", yüzde: "% " },
+        { sembol: "ETH", data: "--haziran", pay: "-.-", yüzde: "% " },
+        { sembol: "XPR", data: "--haziran", pay: "-.-", yüzde: "% " },
+        { sembol: "SOLANA", data: "--haziran", pay: "-.-", yüzde: "% " },
+        { sembol: "SHIB", data: "--haziran", pay: "-.-", yüzde: "% " },
+        { sembol: "ADA", data: "--haziran", pay: "-.-", yüzde: "% " },
     ]
     const responsiveOptions = [
         {
@@ -42,7 +42,7 @@ export const UpcomingDividend = () => {
 
     const dividentsTemplate = (divident) => {
         return (
-            <div className="upcoming-body">
+            <div className="upcoming-body" style={{marginTop:"50px"}}>
                 <div className="p-grid">
                     <div className="p-col-4">
                         <Button className="p-button-symbol" label={divident.sembol} />

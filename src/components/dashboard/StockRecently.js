@@ -5,8 +5,8 @@ import useAxios from '../../utils/useAxios';
 export const StockRecently = () => {
     const [recently, setRecently] = useState([]);
     let mockRecently = [
-        { sembol: "AKBNK", gunlukyuzde: "-0.41", acilis: "11,48", son: "11,75" },
-        { sembol: "GARAN", gunlukyuzde: "0.41", acilis: "11,48", son: "11,75" },
+        { sembol: "XPR", gunlukyuzde: "---", acilis: "...", son: "..." },
+        { sembol: "DOGE", gunlukyuzde: "---", acilis: "...", son: "..." },
     ]
     let api = useAxios()
 
@@ -17,7 +17,7 @@ export const StockRecently = () => {
     return (
         <>{recently &&
             <>
-                <h2>Son Gezilen Hisseler</h2>
+                <h2 style={{marginTop:"50px"}}>Son Gezilen Coinler</h2>
                 <div className="tab-table-card">
                     <StockTable stocks={recently} />
                 </div>

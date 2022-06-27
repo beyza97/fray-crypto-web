@@ -6,12 +6,17 @@ import useAxios from "../utils/useAxios";
 // import { StockTrade } from '../components/dashboard/StockTrade';
 import { StockFollow } from "../components/dashboard/StockFollow";
 import { StockRecently } from "../components/dashboard/StockRecently";
-import { LatestReports } from "../components/dashboard/LatestReports";
-import { Sector } from "../components/dashboard/Sector";
+// import { LatestReports } from "../components/dashboard/LatestReports";
+// import { Sector } from "../components/dashboard/Sector";
 import { UpcomingDividend } from "../components/dashboard/UpcomingDividend";
 import { LastComment } from "../components/LastComment";
 import ModuleTooltip from "../components/dashboard/ModuleTooltip";
 import { Tooltip, Col, Label } from "reactstrap";
+import { Card } from "reactstrap";
+import TradingViewWidget from "react-tradingview-widget";
+import {ModuleTradingView} from "../components/dashboard/Chart";
+import { TechnicalAnalysis } from "../components/dashboard/TechnicalAnalysisChart";
+
 
 export const Dashboard = () => {
   const [dash, setDash] = useState([]);
@@ -26,28 +31,27 @@ export const Dashboard = () => {
     <body className="dashboard-body">
       {/* <CarouselPanel/> */}
       {/* <BistPanel {...dash} /> */}
+      
       <Topbar />
       <div className="p-grid" style={{ marginTop: "10px" }}>
-        <div className="p-col-6">
+      <UpcomingDividend style={{marginTop:"50px", marginBottom:"50px"}}/>
+      
+        <div className="p-col-6" style={{marginTop:"50px"}}>
           {/* <StockTrade {...dash} /> */}
-          <Col>
-            <Label htmlFor="text-input">Hisse Fiyatı</Label>{" "}
-            <ModuleTooltip
-              id={"edit1"}
-              title={"Önceki gün sonu kapanış fiyatıdır."}
-            >
-              <i className="fas fa-info-circle" />
-            </ModuleTooltip>
+          
+          <Col >
+            <h3 htmlFor="text-input">Coin-Durum Tablosu</h3>{" "}
+            <ModuleTradingView/>
           </Col>
-          <Sector />
+          {/* <Sector /> */}
         </div>
-        <div className="p-col-6">
+        <div className="p-col-6" style={{marginTop:"50px"}} >
           <StockFollow />
-          <StockRecently />
-          <LatestReports />
+          <StockRecently style={{marginTop:"50px"}}/>
+          {/* <LatestReports /> */}
         </div>
       </div>
-      <UpcomingDividend />
+      <TechnicalAnalysis style={{marginTop:"50px"}}/>
       <LastComment />
     </body>
   );

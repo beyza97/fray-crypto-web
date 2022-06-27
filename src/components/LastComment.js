@@ -16,7 +16,7 @@ export const LastComment = () => {
             {
                 comments &&
                 <>
-                    <h2>Son yazılar</h2>
+                    <h2>Blog Paylaşımları</h2>
                     <div className="p-grid">
                         {comments.map((comment) => {
                             return (

@@ -6,8 +6,8 @@ export const StockFollow = () => {
     const [favorite, setFavorite] = useState([]);
 
     let mockFollow = [
-        { sembol: "AKBNK", gunlukyuzde: "-0.41", acilis: "11,48", son: "11,75" },
-        { sembol: "GARAN", gunlukyuzde: "0.41", acilis: "11,48", son: "11,75" },
+        { sembol: "BTC", gunlukyuzde: "----", acilis: "...", son: "..." },
+        { sembol: "ETH", gunlukyuzde: "----", acilis: "...", son: "..." },
     ]
     let api = useAxios()
     useEffect(() => {
@@ -17,7 +17,7 @@ export const StockFollow = () => {
     return (
         <>{favorite &&
             <>
-                <h2>Takip Edilen Hisseler</h2>
+                <h2>Takip Edilen Coinler</h2>
                 <div className="tab-table-card">
                     <StockTable stocks={favorite} />
                 </div>
