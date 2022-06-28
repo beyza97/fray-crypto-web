@@ -14,7 +14,7 @@ export function ModuleTradingView({ fullSize }) {
               symbol={"BIST:" + (slug.split(", ")[1] || slug)}
               theme={Themes.DARK}
               locale="tr"
-              autosize
+              autosize={true}
               height={400}
               hide_side_toolbar={false}
               style={BarStyles.BARS}
@@ -25,7 +25,13 @@ export function ModuleTradingView({ fullSize }) {
               save_images={false}
               show_popup_button={true}
               popup_width={1000}
-              popup_height={650}  
+              popup_height={650}
+              timezone="Etc/UTC"
+              range="YTD"
+              details={true}
+              hotlist={true}
+              calendar={true}
+              container_id="trandingview_3a71"  
             />
           </CardBody>
         </Card>
