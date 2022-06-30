@@ -49,14 +49,20 @@ const AppTopbar = (props) => {
 	let topbarClass = classNames('topbar-menu fadeInDown', { 'topbar-menu-active': props.topbarMenuActive })
 	let horizontalIcon = (props.layoutMode === 'horizontal') &&
 		<button type="button" className="p-link topbar-logo" onClick={goDashboard}>
-			<img alt="logo" style={{ height: '45px', marginTop: '4px' }} src="assets/layout/images/logo-slim.png" />
+			<img alt="logo" style={{ height: '45px', marginTop: '4px' }} src="https://f-rayscoring.com/wp-content/uploads/2022/02/Adsiz-tasarim-1.png" />
 		</button>;
+                        // <div class="p-col-12 p-md-4">
+						// <a href="anasayfa linki gelecek">
 
+						// 	<img src="https://f-rayscoring.com/wp-content/uploads/2022/02/Adsiz-tasarim-1.png" class="footer-logo"></a>
+						// <!-- <img src="../layout/images/logo-slim.png" class="footer-logo" /> -->
+
+						// <div>
 	return (
 		<div className="layout-topbar">
 			<div style={{ marginLeft: '5%', marginRight: '5%' }}>
 				{horizontalIcon}
-				<img alt="logo" src="assets/layout/images/logo-slim.png" className="mobile-logo" />
+				<img alt="logo" src="https://f-rayscoring.com/wp-content/uploads/2022/02/Adsiz-tasarim-1.png" className="mobile-logo" />
 
 				<button type="button" className="p-link menu-btn" onClick={props.onMenuButtonClick}>
 					<i className="pi pi-bars"></i>
