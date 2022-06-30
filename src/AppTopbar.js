@@ -8,9 +8,9 @@ import useAxios from './utils/useAxios';
 import { ColorBox } from 'devextreme-react';
 
 const AppTopbar = (props) => {
-	const [Companys, setCompany] = useState([])
-	const [selectedCompany, setSelectedCompany] = useState(null);
-	const [filteredCompanys, setFilteredCompanys] = useState(null);
+	const [Coins, setCoins] = useState([])
+	const [selectedCoins, setSelectedCoins] = useState(null);
+	const [filteredCoins, setFilteredCoins] = useState(null);
 	const history = useHistory();
 
 	let { logoutUser } = useContext(AuthContext)
@@ -20,15 +20,15 @@ const AppTopbar = (props) => {
 		history.push('/')
 	}
 
-	const searchCompany = async (event) => {
-		let _filteredCompanys;
+	const searchCoins = async (event) => {
+		let _filteredCoins;
 		if (!event.query.trim().length) {
-			_filteredCompanys = [...Companys];
+			_filteredCoins = [...Coins];
 		}
 		else {
-			_filteredCompanys = await (await api.get(`/company?query=${event.query}`)).data;
+			_filteredCoins = await (await api.get(`/crypto/coin?query=${event.query}`)).data;
 		}
-		setFilteredCompanys(_filteredCompanys);
+		setFilteredCoins(_filteredCoins);
 	}
 
 	const onTopbarItemClick = (event, item) => {
@@ -119,14 +119,14 @@ const AppTopbar = (props) => {
 								style={{ left: '10%', top: '-5px' }}
 								size={50}
 								placeholder="Coinler içinde ara..."
-								value={selectedCompany}
-								suggestions={filteredCompanys}
-								completeMethod={searchCompany}
+								value={selectedCoins}
+								suggestions={filteredCoins}
+								completeMethod={searchCoins}
 								field="name"
 								forceSelection
 								itemTemplate={itemTemplate}
-								onSelect={(e) => history.push(`/company/${e.value.code}`)}
-								onChange={(e) => setSelectedCompany(e.value)} />
+								onSelect={(e) => history.push(`/crypto/coin/${e.value.code}`)}
+								onChange={(e) => setSelectedCoins(e.value)} />
 						</div>
 						
 					</ul>

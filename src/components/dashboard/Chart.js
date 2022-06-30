@@ -31,7 +31,8 @@ export function ModuleTradingView({ fullSize }) {
               details={true}
               hotlist={true}
               calendar={true}
-              container_id="trandingview_3a71" 
+              container_id="trandingview_3a71"  
+
             />
           </CardBody>
         </Card>
