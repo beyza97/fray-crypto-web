@@ -32,16 +32,18 @@ const AppTopbar = (props) => {
       _filteredCoins = await (
         await api.get("/crypto/coin/all?languageCode=en")
       )?.data;
-
     }
     _filteredCoins.filter((data) => {
       const dataName = data.name;
       return dataName.includes(query);
     });
     setFilteredCoins(
-      _filteredCoins.filter((item) =>
-        item.name.includes(event.query.trim().toLowerCase())
-      )
+      _filteredCoins.filter((item) => {
+        item.name === "ProxyNode" && console.log(event.query, item.name);
+        return item.name
+          .toLowerCase()
+          .includes(event.query.trim().toLowerCase());
+      })
     );
   };
 

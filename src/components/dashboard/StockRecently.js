@@ -11,7 +11,7 @@ export const StockRecently = () => {
     let api = useAxios()
 
     useEffect(() => {
-        api.get('/visits/last/5').then(res => setRecently(res.data))
+        api.get('/visits/last/3').then(res => setRecently(res.data))
         //setRecently(mockRecently)
     }, []);
     return (

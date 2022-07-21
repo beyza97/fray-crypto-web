@@ -9,13 +9,13 @@ export function ModuleTradingView({ fullSize }) {
     <Row>
       <Col>
         <Card>
-          <CardBody style={{ height: "550px" }}>
+          <CardBody style={{ height: "700px" }}>
             <TradingViewWidget
               symbol={"BIST:" + (slug.split(", ")[1] || slug)}
               theme={Themes.DARK}
               locale="tr"
               autosize={true}
-              height={400}
+              height={500}
               hide_side_toolbar={false}
               style={BarStyles.BARS}
               allow_symbol_change={true}

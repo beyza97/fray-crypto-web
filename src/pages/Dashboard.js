@@ -32,12 +32,10 @@ export const Dashboard = () => {
       {/* <CarouselPanel/> */}
       {/* <BistPanel {...dash} /> */}
       
-
-
       <UpcomingDividend style={{marginTop:"50px", marginBottom:"50px"}}/>
       <Topbar />
       <div className="p-grid" style={{ marginTop: "10px" }}>
-        <div className="p-col-6" style={{marginTop:"50px"}}>
+        <div className="p-col-12" style={{marginTop:"50px"}}>
           {/* <StockTrade {...dash} /> */}
           
           <Col >
@@ -46,11 +44,15 @@ export const Dashboard = () => {
           </Col>
           {/* <Sector /> */}
         </div>
-        <div className="p-col-6" style={{marginTop:"50px"}} >
-          <StockFollow />
-          <StockRecently style={{marginTop:"50px"}}/>
-          {/* <LatestReports /> */}
+      </div>
+      <div className="p-grid" style={{marginTop:"20px"}}>
+        <div className="p-col-6">
+          <StockFollow/>
         </div>
+        <div className="p-col-6">
+          <StockRecently/>
+        </div>
+
       </div>
       <TechnicalAnalysis style={{marginTop:"50px"}}/>
       <LastComment />
