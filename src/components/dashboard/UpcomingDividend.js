@@ -9,12 +9,12 @@ export const UpcomingDividend = () => {
     let api = useAxios()
 
     let mockDividents = [
-        { sembol: "BTC", data: "--haziran", pay: "-.-", yüzde: "% " },
-        { sembol: "ETH", data: "--haziran", pay: "-.-", yüzde: "% " },
-        { sembol: "XPR", data: "--haziran", pay: "-.-", yüzde: "% " },
-        { sembol: "SOLANA", data: "--haziran", pay: "-.-", yüzde: "% " },
-        { sembol: "SHIB", data: "--haziran", pay: "-.-", yüzde: "% " },
-        { sembol: "ADA", data: "--haziran", pay: "-.-", yüzde: "% " },
+        { sembol: "BTC", /*data: "--haziran",*/ pay: "-.-", yüzde: "% " },
+        { sembol: "ETH",  /*data: "--haziran",*/ pay: "-.-", yüzde: "% " },
+        { sembol: "XPR",  /*data: "--haziran",*/ pay: "-.-", yüzde: "% " },
+        { sembol: "SOLANA",  /*data: "--haziran",*/ pay: "-.-", yüzde: "% " },
+        { sembol: "SHIB",  /*data: "--haziran",*/ pay: "-.-", yüzde: "% " },
+        { sembol: "ADA",  /*data: "--haziran",*/ pay: "-.-", yüzde: "% " },
     ]
     const responsiveOptions = [
         {
@@ -48,15 +48,15 @@ export const UpcomingDividend = () => {
                         <Button className="p-button-symbol" label={divident.sembol} />
                     </div>
                 </div>
-                <div className="p-grid" style={{marginLeft:'1%', opacity: '0.5'}}>
-                    <div className="p-col-4">Tarih</div>
-                    <div className="p-col-4">Pay Başı</div>
-                    <div className="p-col-4">Yüzde</div>
+                <div className="p-grid" style={{marginLeft:'3%', opacity: '0.5'}}>
+                    {/* <div className="p-col-4">Tarih</div> */}
+                    <div className="p-col-6">Pay Başı</div>
+                    <div className="p-col-6">Yüzde</div>
                 </div>
-                <div className="p-grid" style={{marginLeft:'1%'}}>
-                    <div className="p-col-4">{divident.data}</div>
-                    <div className="p-col-4">{divident.pay}</div>
-                    <div className="p-col-4">{divident.yüzde}</div>
+                <div className="p-grid" style={{marginLeft:'3%'}}>
+                    {/* <div className="p-col-4">{divident.data}</div> */}
+                    <div className="p-col-6">{divident.pay}</div>
+                    <div className="p-col-6">{divident.yüzde}</div>
                 </div>
             </div>
         );
