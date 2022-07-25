@@ -45,11 +45,11 @@ export const Dashboard = () => {
           {/* <Sector /> */}
         </div>
       </div>
-      <div className="p-grid" style={{marginTop:"20px"}}>
-        <div className="p-col-6">
+      <div className="p-grid" style={{marginTop:"10px"}}>
+        <div className="p-col-6"  style={{marginTop:"100px"}}>
           <StockFollow/>
         </div>
-        <div className="p-col-6">
+        <div className="p-col-6" style={{marginTop:"50px"}}>
           <StockRecently/>
         </div>
 

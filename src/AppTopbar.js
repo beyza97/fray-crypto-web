@@ -9,6 +9,11 @@ import { ColorBox } from "devextreme-react";
 import useFetch from "./components/useFetch";
 import { Input } from "reactstrap";
 import query from "devextreme/data/query";
+import AppLeftBar from './AppLeftBar';
+
+<div>
+<AppLeftBar/>
+</div>
 
 const AppTopbar = (props) => {
   const [Coins, setCoins] = useState([]);
@@ -39,7 +44,7 @@ const AppTopbar = (props) => {
     });
     setFilteredCoins(
       _filteredCoins.filter((item) => {
-        item.name === "ProxyNode" && console.log(event.query, item.name);
+        // item.name === "ProxyNode" && console.log(event.query, item.name);
         return item.name
           .toLowerCase()
           .includes(event.query.trim().toLowerCase());
@@ -83,10 +88,19 @@ const AppTopbar = (props) => {
   // <!-- <img src="../layout/images/logo-slim.png" class="footer-logo" /> -->
 
   // <div>
+  
+  // yatay topbar 
+
+
   return (
+
     <div className="layout-topbar">
+    <div>
+      <AppLeftBar/> 
+    </div>
       <div style={{ marginLeft: "5%", marginRight: "5%" }}>
         {horizontalIcon}
+
         <img
           alt="logo"
           src="https://f-rayscoring.com/wp-content/uploads/2022/02/Adsiz-tasarim-1.png"
@@ -132,7 +146,7 @@ const AppTopbar = (props) => {
                     <span>Profilim</span>
                   </button>
                 </li>
-                {/* <li role="menuitem">
+                <li role="menuitem">
 									<button type="button" className="p-link">
 										<i className="pi pi-lock"></i>
 										<span>Privacy</span>
@@ -143,7 +157,7 @@ const AppTopbar = (props) => {
 										<i className="pi pi-cog"></i>
 										<span>Settings</span>
 									</button>
-								</li> */}
+								</li>
                 <li role="menuitem">
                   <button type="button" className="p-link" onClick={logoutUser}>
                     <i className="pi pi-sign-out"></i>
@@ -168,13 +182,13 @@ const AppTopbar = (props) => {
               <Button
                 label="Portal"
                 style={{ marginLeft: "40px", top: "-10px" }}
-                onClick={() => history.push("/indicates")}
+                onClick={() => history.push("/portal")}
                 className="p-button-plain p-button-lg p-button-text"
               />
               <Button
                 label="Blog"
                 style={{ marginLeft: "40px", top: "-10px" }}
-                onClick={() => history.push("/sectors")}
+                onClick={() => history.push("/blog")}
                 className="p-button-plain p-button-lg p-button-text"
               />
               {/* <Button
