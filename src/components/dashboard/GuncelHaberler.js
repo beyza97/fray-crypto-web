@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { StockTable } from './StockTable';
+import { HaberTablo } from './HaberTablo';
 import useAxios from '../../utils/useAxios';
 
-export const StockFollow = () => {
+
+export const GuncelHaberler = () => {
     const [favorite, setFavorite] = useState([]);
 
     let mockFollow = [
@@ -18,9 +19,10 @@ export const StockFollow = () => {
     return (
         <>{favorite &&
             <>
-                <h2>Takip Edilen Coinler</h2>
+                <h2>En Güncel  Piyasa Başlıkları </h2>
                 <div className="tab-table-card">
-                    <StockTable stocks={favorite} />
+                    <HaberTablo/>
+                    
                 </div>
             </>
         }

@@ -23,7 +23,8 @@ import { Footer } from './components/Footer';
 import { BlogDetail } from './pages/BlogDetail';
 import { BlogCreate } from './pages/BlogCreate';
 import { Filtering } from './pages/Filtering';
-
+import { HaberAnaliz } from './pages/HaberAnaliz';
+import { BTCMainPage } from './pages/BTCMainPage';
 const App = () => {
 
     const [activeTopbarItem, setActiveTopbarItem] = useState(null);
@@ -110,6 +111,8 @@ const App = () => {
                     <PrivateRoute path="/blog/:id" component={BlogDetail} exact />
                     <PrivateRoute path="/create/blog" component={BlogCreate} exact />
                     <PrivateRoute path="/filtering" component={Filtering} />
+                    <PrivateRoute path="/haberAnaliz" component={HaberAnaliz} exact/>
+                    <PrivateRoute path="/btcinfo" component={BTCMainPage} exact />
                 </div>
                 <Footer />
                 <AppFooter />

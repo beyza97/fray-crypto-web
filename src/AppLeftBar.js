@@ -1,5 +1,6 @@
 //import useState hook to create menu collapse state
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 //import react pro sidebar components
 import {
@@ -29,6 +30,11 @@ import "react-pro-sidebar/dist/css/styles.css";
 import "./AppLeftBar.css";
 
 const Header = () => {
+    const history = useHistory();
+    const goDashboard = () => {
+        history.push("/");
+      };
+    
   //create initial menuCollapse state using useState hook
   const [menuCollapse, setMenuCollapse] = useState(false);
 
@@ -55,16 +61,16 @@ const Header = () => {
           </SidebarHeader>
           <SidebarContent>
             <Menu iconShape="square">
-              <MenuItem active={true} icon={<FiHome />}>
+              <MenuItem active={true} icon={<FiHome />} onClick={goDashboard}>
                 Anasayfa
               </MenuItem>
-              <MenuItem icon={<BsNewspaper />}>Haber Analizleri</MenuItem>
+              <MenuItem icon={<BsNewspaper />} onClick={()=>history.push("/haberAnaliz")}>Haber Analizleri</MenuItem>
               <MenuItem icon={<BiAnalyse />}>Sektör Analizleri</MenuItem>
               <MenuItem icon={<BsCurrencyExchange />}>Anlık Borsa</MenuItem>
             </Menu>
           </SidebarContent>
           <SidebarFooter>
-            <Menu iconShape="">
+            <Menu iconShape="round">
               <MenuItem icon={<FiLogOut />}>Çıkış</MenuItem>
             </Menu>
           </SidebarFooter>

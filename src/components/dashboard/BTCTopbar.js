@@ -15,7 +15,7 @@ import AppLeftBar from './AppLeftBar';
 <AppLeftBar/>
 </div>
 
-const AppTopbar = (props) => {
+const BTCTopbar = (props) => {
   const [Coins, setCoins] = useState([]);
   const [selectedCoins, setSelectedCoins] = useState(null);
   const [filteredCoins, setFilteredCoins] = useState(null);
@@ -176,7 +176,7 @@ const AppTopbar = (props) => {
               <Button
                 label="BTC"
                 style={{ marginLeft: "40px", top: "-10px" }}
-                onClick={() => history.push("/btcinfo")}
+                onClick={() => history.push("/BTCinfo")}
                 className="p-button-plain p-button-lg p-button-text"
               />
               <Button
@@ -203,8 +203,14 @@ const AppTopbar = (props) => {
                 onClick={() => history.push("/alarms")}
                 className="p-button-plain p-button-lg p-button-text"
               /> */}
+              <Button
+                label="Profilim"
+                style={{ left: "40px", top: "-10px" }}
+                onClick={() => history.push("/profile")}
+                className="p-button-plain p-button-lg p-button-text"
+              />
               <AutoComplete
-                style={{ left: "15%", top: "-5px", right: "20%" }}
+                style={{ left: "45%", top: "-5px", right: "2%" }}
                 size={30}
                 placeholder="Coinler içinde ara..."
                 value={selectedCoins}
@@ -216,15 +222,7 @@ const AppTopbar = (props) => {
                 onSelect={(e) => history.push(`/crypto/coin/${e.value.code}`)}
                 onChange={(e) => setSelectedCoins(e.value)}
               />
-              <Button
-                label="Profilim"
-                style={{ right: "-40%", top: "-10px" }}
-                onClick={() => history.push("/profile")}
-                className="p-button-plain p-button-lg p-button-text"
-              />
-
             </div>
-
           </ul>
         </div>
       </div>

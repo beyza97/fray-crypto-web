@@ -14,9 +14,9 @@ import ModuleTooltip from "../components/dashboard/ModuleTooltip";
 import { Tooltip, Col, Label } from "reactstrap";
 import { Card } from "reactstrap";
 import TradingViewWidget from "react-tradingview-widget";
-import {ModuleTradingView} from "../components/dashboard/Chart";
+import { ModuleTradingView } from "../components/dashboard/Chart";
 import { TechnicalAnalysis } from "../components/dashboard/TechnicalAnalysisChart";
-
+import { TotalMarketCap } from "../components/dashboard/TotalMarketCap";
 
 export const Dashboard = () => {
   const [dash, setDash] = useState([]);
@@ -31,30 +31,29 @@ export const Dashboard = () => {
     <body className="dashboard-body">
       {/* <CarouselPanel/> */}
       {/* <BistPanel {...dash} /> */}
-      
-      <UpcomingDividend style={{marginTop:"50px", marginBottom:"50px"}}/>
+      <TotalMarketCap/>
+      <UpcomingDividend style={{ marginTop: "50px", marginBottom: "50px" }} />
       <Topbar />
       <div className="p-grid" style={{ marginTop: "10px" }}>
-        <div className="p-col-12" style={{marginTop:"50px"}}>
+        <div className="p-col-12" style={{ marginTop: "50px" }}>
           {/* <StockTrade {...dash} /> */}
-          
-          <Col >
+
+          <Col>
             <h3 htmlFor="text-input">Coin-Durum Tablosu</h3>{" "}
-            <ModuleTradingView/>
+            <ModuleTradingView />
           </Col>
           {/* <Sector /> */}
         </div>
       </div>
-      <div className="p-grid" style={{marginTop:"10px"}}>
-        <div className="p-col-6"  style={{marginTop:"100px"}}>
-          <StockFollow/>
+      <div className="p-grid" style={{ marginTop: "10px" }}>
+        <div className="p-col-6" style={{ marginTop: "100px" }}>
+          <StockFollow />
         </div>
-        <div className="p-col-6" style={{marginTop:"50px"}}>
-          <StockRecently/>
+        <div className="p-col-6" style={{ marginTop: "50px" }}>
+          <StockRecently />
         </div>
-
       </div>
-      <TechnicalAnalysis style={{marginTop:"50px"}}/>
+      <TechnicalAnalysis style={{ marginTop: "50px" }} />
       <LastComment />
     </body>
   );
