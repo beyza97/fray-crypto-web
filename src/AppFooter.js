@@ -5,7 +5,7 @@ const AppFooter = () => {
 
     return (
         <div className="layout-footer clearfix">
-            <div className='p-grid' style={{ marginLeft: '5%' }}>
+            <div className='p-grid' style={{ marginLeft: '8%' }}>
                 <div className="p-col-12">
                     <span className="footer-text-left" >
                         <span style={{ color: 'white' }}>F-Ray Financial Technologies © 2022. All rights reserved.</span>

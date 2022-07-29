@@ -80,7 +80,7 @@ export const Topbar = ({ company, company2 }) => {
                                     </div>
                                 </div>
                             </div>
-                        </div >
+                        </div>
                     }
                     <div className="p-col-1 vertical-line" style={{marginLeft:'5%'}}></div>
                     {stock2 &&

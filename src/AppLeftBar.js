@@ -30,11 +30,11 @@ import "react-pro-sidebar/dist/css/styles.css";
 import "./AppLeftBar.css";
 
 const Header = () => {
-    const history = useHistory();
-    const goDashboard = () => {
-        history.push("/");
-      };
-    
+  const history = useHistory();
+  const goDashboard = () => {
+    history.push("/");
+  };
+
   //create initial menuCollapse state using useState hook
   const [menuCollapse, setMenuCollapse] = useState(false);
 
@@ -64,7 +64,12 @@ const Header = () => {
               <MenuItem active={true} icon={<FiHome />} onClick={goDashboard}>
                 Anasayfa
               </MenuItem>
-              <MenuItem icon={<BsNewspaper />} onClick={()=>history.push("/haberAnaliz")}>Haber Analizleri</MenuItem>
+              <MenuItem
+                icon={<BsNewspaper />}
+                onClick={() => history.push("/haber")}
+              >
+                Haberler
+              </MenuItem>
               <MenuItem icon={<BiAnalyse />}>Sektör Analizleri</MenuItem>
               <MenuItem icon={<BsCurrencyExchange />}>Anlık Borsa</MenuItem>
             </Menu>

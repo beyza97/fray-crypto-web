@@ -9,11 +9,13 @@ import { ColorBox } from "devextreme-react";
 import useFetch from "./components/useFetch";
 import { Input } from "reactstrap";
 import query from "devextreme/data/query";
-import AppLeftBar from './AppLeftBar';
+import AppLeftBar from "./AppLeftBar";
 
-<div>
+{
+  /* <div>
 <AppLeftBar/>
-</div>
+</div> */
+}
 
 const AppTopbar = (props) => {
   const [Coins, setCoins] = useState([]);
@@ -88,17 +90,15 @@ const AppTopbar = (props) => {
   // <!-- <img src="../layout/images/logo-slim.png" class="footer-logo" /> -->
 
   // <div>
-  
-  // yatay topbar 
 
+  // yatay topbar
 
   return (
-
     <div className="layout-topbar">
-    <div>
-      <AppLeftBar/> 
-    </div>
-      <div style={{ marginLeft: "5%", marginRight: "5%" }}>
+      <div>
+        <AppLeftBar />
+      </div>
+      <div style={{ marginLeft: "10%", marginRight: "5%" }}>
         {horizontalIcon}
 
         <img
@@ -147,17 +147,17 @@ const AppTopbar = (props) => {
                   </button>
                 </li>
                 <li role="menuitem">
-									<button type="button" className="p-link">
-										<i className="pi pi-lock"></i>
-										<span>Privacy</span>
-									</button>
-								</li>
-								<li role="menuitem">
-									<button type="button" className="p-link">
-										<i className="pi pi-cog"></i>
-										<span>Settings</span>
-									</button>
-								</li>
+                  <button type="button" className="p-link">
+                    <i className="pi pi-lock"></i>
+                    <span>Privacy</span>
+                  </button>
+                </li>
+                <li role="menuitem">
+                  <button type="button" className="p-link">
+                    <i className="pi pi-cog"></i>
+                    <span>Settings</span>
+                  </button>
+                </li>
                 <li role="menuitem">
                   <button type="button" className="p-link" onClick={logoutUser}>
                     <i className="pi pi-sign-out"></i>
@@ -176,7 +176,7 @@ const AppTopbar = (props) => {
               <Button
                 label="BTC"
                 style={{ marginLeft: "40px", top: "-10px" }}
-                onClick={() => history.push("/btcinfo")}
+                onClick={() => history.push("/btc")}
                 className="p-button-plain p-button-lg p-button-text"
               />
               <Button
@@ -216,15 +216,13 @@ const AppTopbar = (props) => {
                 onSelect={(e) => history.push(`/crypto/coin/${e.value.code}`)}
                 onChange={(e) => setSelectedCoins(e.value)}
               />
-              <Button
+              {/* <Button
                 label="Profilim"
-                style={{ right: "-40%", top: "-10px" }}
+                style={{ right: "-35%", top: "-10px" }}
                 onClick={() => history.push("/profile")}
                 className="p-button-plain p-button-lg p-button-text"
-              />
-
+              /> */}
             </div>
-
           </ul>
         </div>
       </div>

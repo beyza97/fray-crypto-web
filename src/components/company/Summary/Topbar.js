@@ -72,7 +72,7 @@ export const Topbar = (company) => {
                                     </div>
                                 </div>
                             </div>
-                        </div >
+                        </div>
                     }
                 </div>
             </div>

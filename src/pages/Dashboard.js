@@ -17,6 +17,8 @@ import TradingViewWidget from "react-tradingview-widget";
 import { ModuleTradingView } from "../components/dashboard/Chart";
 import { TechnicalAnalysis } from "../components/dashboard/TechnicalAnalysisChart";
 import { TotalMarketCap } from "../components/dashboard/TotalMarketCap";
+import { Top10Coins } from "../components/dashboard/Top10Coins";
+import { Top10CoinsTable } from "../components/dashboard/Top10CoinsTable";
 
 export const Dashboard = () => {
   const [dash, setDash] = useState([]);
@@ -39,17 +41,20 @@ export const Dashboard = () => {
           {/* <StockTrade {...dash} /> */}
 
           <Col>
-            <h3 htmlFor="text-input">Coin-Durum Tablosu</h3>{" "}
-            <ModuleTradingView />
+            <h3 htmlFor="text-input" style={{marginLeft:"5%"}}>Coin-Durum Tablosu</h3>{" "}
+            <div style={{marginLeft:"5%"}}>
+            <ModuleTradingView/>
+            </div>
+            
           </Col>
           {/* <Sector /> */}
         </div>
       </div>
       <div className="p-grid" style={{ marginTop: "10px" }}>
-        <div className="p-col-6" style={{ marginTop: "100px" }}>
-          <StockFollow />
+        <div className="p-col-5" style={{ marginTop: "50px",marginLeft:"5%"}}>
+          <Top10Coins/>
         </div>
-        <div className="p-col-6" style={{ marginTop: "50px" }}>
+        <div className="p-col-5" style={{ marginTop: "40px" }}>
           <StockRecently />
         </div>
       </div>
@@ -57,4 +62,5 @@ export const Dashboard = () => {
       <LastComment />
     </body>
   );
+
 };

@@ -111,8 +111,8 @@ const App = () => {
                     <PrivateRoute path="/blog/:id" component={BlogDetail} exact />
                     <PrivateRoute path="/create/blog" component={BlogCreate} exact />
                     <PrivateRoute path="/filtering" component={Filtering} />
-                    <PrivateRoute path="/haberAnaliz" component={HaberAnaliz} exact/>
-                    <PrivateRoute path="/btcinfo" component={BTCMainPage} exact />
+                    <PrivateRoute path="/haber" component={HaberAnaliz} exact/>
+                    <PrivateRoute path="/btc" component={BTCMainPage} exact />
                 </div>
                 <Footer />
                 <AppFooter />
