@@ -62,7 +62,7 @@ export const UpcomingDividend = () => {
 
   return (
     <div>
-      <Carousel
+      {/* <Carousel
         value={dividents.dominance}
         numVisible={3}
         numScroll={1}
@@ -71,7 +71,7 @@ export const UpcomingDividend = () => {
         circular
         autoplayInterval={3000}
         itemTemplate={dividentsTemplate}
-      />
+      /> */}
     </div>
   );
 };

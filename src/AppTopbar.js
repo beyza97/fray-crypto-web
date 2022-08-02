@@ -95,9 +95,9 @@ const AppTopbar = (props) => {
 
   return (
     <div className="layout-topbar">
-      <div>
+      {/* <div>
         <AppLeftBar />
-      </div>
+      </div> */}
       <div style={{ marginLeft: "10%", marginRight: "5%" }}>
         {horizontalIcon}
 

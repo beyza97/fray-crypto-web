@@ -3,7 +3,7 @@ import { Carousel } from "primereact/carousel";
 import { Button } from "primereact/button";
 import useAxios from "../../utils/useAxios";
 import { setPublicElementWrapper } from "devextreme/core/element";
-
+import { Label } from "reactstrap";
 export const TotalMarketCap = () => {
   const [allcoinData, setAllCoinData] = useState([]);
 
@@ -14,25 +14,26 @@ export const TotalMarketCap = () => {
       .get("/crypto/coin/dominance/USD")
       .then((res) => setAllCoinData(res.data));
   }, []);
-  console.log(allcoinData);
 
 
 
   return (
-    <div className="upcoming-body" style={{ marginTop: "5%", marginLeft:"3%" }}>
-      <div className="p-grid">
-        <div className="p-col-4">
+    <div /*className="upcoming-body"*/ style={{ marginTop: "5%", marginLeft:"3%" }}>
+
+        {/* <div className="p-col-4">
           <Button
             className="p-button-symbol"
             style={{marginLeft:"10%"}}
             title="İlgili Açıklama Eklenecek"
-            label="Total Market Cap"
+            
           />
-        </div>
-      </div>
-      <div className="p-col-4" style={{ color: "#fff",marginLeft:"3%" }}>
+        </div> */}
+        <Label>
+          Toplam Piyasa Değeri: {allcoinData.total_market_cap} 
+        </Label>
+      {/* <div className="p-col-4" style={{ color: "#fff",marginLeft:"3%" }}>
         {allcoinData.total_market_cap}
-      </div>
+      </div> */}
     </div>
   );
 };

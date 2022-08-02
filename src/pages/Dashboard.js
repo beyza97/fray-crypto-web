@@ -30,6 +30,7 @@ export const Dashboard = () => {
 
   return (
     //bu body div olacak
+    
     <body className="dashboard-body">
       {/* <CarouselPanel/> */}
       {/* <BistPanel {...dash} /> */}

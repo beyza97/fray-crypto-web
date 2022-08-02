@@ -16,16 +16,20 @@ import { UpcomingDividend } from "../components/dashboard/UpcomingDividend";
 import { ModuleTradingView } from "../components/dashboard/Chart";
 import { Col } from "reactstrap";
 import { TechnicalAnalysis } from "../components/dashboard/TechnicalAnalysisChart";
+import { BTCHorizontalAccordion } from "../components/dashboard/BTCHorizontalAccordion";
+
+
 export const BTCMainPage = () => {
   return (
     <body className="dashboard-body">
       <UpcomingDividend />
       <div className="p-grid" style={{ marginTop: "5%" }}>
         <div className="p-col-10" style={{ marginLeft: "10%" }}>
-          <Col>
-          <TechnicalAnalysis style={{ marginTop: "50px" }} />
-          </Col>
+          
+          <BTCHorizontalAccordion style={{ marginTop: "40px" }} />
+
         </div>
+
       </div>
     </body>
   );

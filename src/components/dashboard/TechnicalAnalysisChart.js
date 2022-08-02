@@ -10,7 +10,7 @@ return(
         <Col>
             <Card>
                 <CardBody  style={{ height: "600px" }}>
-                    <TradingViewWidget 
+                    {/* <TradingViewWidget 
                         symbol={"BIST:" + (slug.split(", ")[1] || slug)}
                         theme={Themes.DARK}
                         locale="tr"
@@ -28,7 +28,7 @@ return(
                         popup_width={1000}
                         popup_height={650}
                         
-                    />
+                    /> */}
                 </CardBody>
             </Card>
         </Col>
