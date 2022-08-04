@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 
 export const HaberTablo = ({ news }) => {
     const [activeIndex1, setActiveIndex1] = useState(1);
-    // let datetr=moment(news.publication_datetime).format('llll');
+    // let datetr[]=moment(news.publication_datetime).format('llll');
     // console.log("datetr ", datetr);
 
   console.log("news", news);

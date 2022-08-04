@@ -13,8 +13,9 @@ export function ModuleTradingView({/*tradeinfo,*/ fullSize }) {
         <Card>
           <CardBody style={{ height: "700px" }}>
             <TradingViewWidget
-              symbol={"BTC:" + (slug.split(",   ")[1] || slug)}
+              symbol={"BTC" /* + (slug.split(",   ")[1] || slug)*/}
               // slug={tradeinfo.symbol}
+              
               theme={Themes.DARK}
               locale="tr"
               autosize
