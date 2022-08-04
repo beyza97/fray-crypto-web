@@ -29,11 +29,11 @@ export const UpcomingDividend = () => {
 
   useEffect(() => {
     // api.get('/dashboard/divident/disclosure').then(res => setDividents(res.data))
-    api.get("/crypto/coin/dominance/USD").then((res) => setDividents(res.data));
+    api.get("/crypto/coin/dominance?ccy=USD").then((res) => setDividents(res.data));
   }, []);
 
   const dividentsTemplate = (divident) => {
-    return (
+    return divident ? (
       <div className="upcoming-body" style={{ marginTop: "10px" }}>
         <div className="p-grid">
           <div className="p-col-4">
@@ -56,11 +56,13 @@ export const UpcomingDividend = () => {
           <div className="p-col-6">{divident.dominance}</div>
         </div>
       </div>
+    ) : (
+      <></>
     );
   };
   console.log("test_");
 
-  return (
+  return dividents ? (
     <div>
       {/* <Carousel
         value={dividents.dominance}
@@ -73,5 +75,6 @@ export const UpcomingDividend = () => {
         itemTemplate={dividentsTemplate}
       /> */}
     </div>
-  );
+  
+  ):(<></>);
 };

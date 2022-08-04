@@ -1,31 +1,28 @@
-import React, { useState, useEffect } from 'react';
-import { HaberTablo } from './HaberTablo';
-import useAxios from '../../utils/useAxios';
-
+import React, { useState, useEffect } from "react";
+import { HaberTablo } from "./HaberTablo";
+import useAxios from "../../utils/useAxios";
+import { Column } from "primereact/column";
+import { Button } from "reactstrap";
 
 export const GuncelHaberler = () => {
-    const [favorite, setFavorite] = useState([]);
+  const [dailynews, setDailNews] = useState([]);
+  let api = useAxios();
+  useEffect(() => {
+    api.get("/crypto/news/NewsSearch").then((res) => setDailNews(res.data))
+    .catch((err)=>console.log("error", err));
+}, []);
+  console.log("daily news data: " , dailynews);
 
-    let mockFollow = [
-        { sembol: "BTC", gunlukyuzde: "----", acilis: "...", son: "..." },
-        { sembol: "ETH", gunlukyuzde: "----", acilis: "...", son: "..." },
-    ]
-    let api = useAxios()
-    useEffect(() => {
-        //api.get('/favorite').then(res => setFavorite(res.data))
-        api.get('https://api.test.f-rayscoring.com/crypto/coin/dominance/USD')
-        setFavorite(mockFollow)
-    }, []);
-    return (
-        <>{favorite &&
-            <>
-                <h2>En Güncel  Piyasa Başlıkları </h2>
-                <div className="tab-table-card">
-                    <HaberTablo/>
-                    
-                </div>
-            </>
-        }
+
+  // col ile kullanım örneklerini araştır 
+  return dailynews ? (
+        <>
+          <h2> Son Haberler </h2>
+          <div className="tab-table-card">
+            <h4 style={{color:"#fff", marginTop:'5%',marginLeft:'5%'}}> </h4>
+            <HaberTablo news={dailynews.data}/>
+
+          </div>
         </>
-    );
-}
+  ):(<> </>);
+};

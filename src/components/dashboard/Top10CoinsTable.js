@@ -8,13 +8,13 @@ import useAxios from "../../utils/useAxios";
 import { render } from "preact/compat";
 import useFetch from "../useFetch";
 import { CoinAlert } from "./Alert";
-
+/*
 export const Top10CoinsTable=()=>{
   const coins = useRouteMatch('/crypto/coin/dominance/USD');
   const slug =coins && coins.params.coin;
   const [coininfo]=useFetch("/crypto/"+slug);
   if(!coininfo) return <CoinAlert/>
-
+  console.log(coininfo)
   return coininfo.map (coin => (
     // array içerisindeki objelere ulaşabilmek için map ile array içerisinde dolaştı ve symbol , name verilerine ulaştı tabloya
     <div
@@ -40,19 +40,11 @@ export const Top10CoinsTable=()=>{
 }
 
 
+*/
 
-
-
-/*
-//hatalı mapping olan kısım 
+//hatalı mapping olan kısım
 
 export const Top10CoinsTable = ({ topCoins }) => {
-  const [topcoins, setTopCoins] = useState([]);
-  let api = useAxios();
-  useEffect(() => {
-    api.get("/crypto/coin/dominance/USD").then((res) => setTopCoins(res.data));
-  }, []);
-
   //   const TopTenTemplate = (tt) => {
   // return(
   //   <div>
@@ -61,32 +53,34 @@ export const Top10CoinsTable = ({ topCoins }) => {
   //     </span>
   //   </div>
   // );
-  
-  if(!topCoins)
-  return console.log("hata");
-  return topCoins.map (coin => (
-    // array içerisindeki objelere ulaşabilmek için map ile array içerisinde dolaştı ve symbol , name verilerine ulaştı tabloya
-    <div
-      className="upcoming-body"
-      style={{ marginTop: "5%", marginLeft: "3%" }}
-    >
-      <div className="p-grid">
-        <div className="p-col-4">
-          <Button
-            // className="p-button-symbol"
-            style={{ marginLeft: "10%" }}
-            title="İlgili Açıklama Eklenecek"
-            label={coin.symbol}
-          />
+
+  return topCoins ? (
+    topCoins.map((coin) => (
+      // array içerisindeki objelere ulaşabilmek için map ile array içerisinde dolaştı ve symbol , name verilerine ulaştı tabloya
+      <div
+        className="upcoming-body"
+        style={{ marginTop: "5%", marginLeft: "3%" }}
+      >
+        <div className="p-grid">
+          <div className="p-col-4">
+            <Button
+              // className="p-button-symbol"
+              style={{ marginLeft: "10%" }}
+              title="İlgili Açıklama Eklenecek"
+              label={coin.symbol}
+            />
+          </div>
+        </div>
+        <div className="p-col-4" style={{ color: "#fff", marginLeft: "3%" }}>
+          {coin.name}
         </div>
       </div>
-      <div className="p-col-4" style={{ color: "#fff", marginLeft: "3%" }}>
-        {coin.name}
-      </div>
-    </div>
-  ));
+    ))
+  ) : (
+    <h1> data is not found</h1>
+  );
 };
-*/
+
 /*
 // MAPPING UYGULANAN KODLAR 
 export const Top10CoinsTable = ({topCoins}) => {

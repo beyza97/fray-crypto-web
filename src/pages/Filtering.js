@@ -809,7 +809,7 @@ export const Filtering = () => {
                     <Column field="subCategory" header="Alt Kategori" style={{ backgroundColor: '#171717' }}></Column>
                 </DataTable>
             </div>
-        </div >
+        </div>
     )
 
 }

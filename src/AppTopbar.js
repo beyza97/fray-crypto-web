@@ -191,6 +191,12 @@ const AppTopbar = (props) => {
                 onClick={() => history.push("/blog")}
                 className="p-button-plain p-button-lg p-button-text"
               />
+              <Button
+              label="Haber"
+              style={{ marginLeft: "40px", top: "-10px" }}
+                onClick={() => history.push("/haber")}
+                className="p-button-plain p-button-lg p-button-text"
+              />
               {/* <Button
                 label="Haberler"
                 style={{ marginLeft: "40px", top: "-10px" }}
@@ -206,7 +212,7 @@ const AppTopbar = (props) => {
               <AutoComplete
                 style={{ left: "15%", top: "-5px", right: "20%" }}
                 size={30}
-                placeholder="Coinler içinde ara..."
+                placeholder="100 Coin içinde ara..."
                 value={selectedCoins}
                 suggestions={filteredCoins}
                 completeMethod={searchCoins}
@@ -216,12 +222,12 @@ const AppTopbar = (props) => {
                 onSelect={(e) => history.push(`/crypto/coin/${e.value.code}`)}
                 onChange={(e) => setSelectedCoins(e.value)}
               />
-              {/* <Button
+              <Button
                 label="Profilim"
                 style={{ right: "-35%", top: "-10px" }}
                 onClick={() => history.push("/profile")}
                 className="p-button-plain p-button-lg p-button-text"
-              /> */}
+              />
             </div>
           </ul>
         </div>

@@ -8,15 +8,17 @@ import { InputText } from "primereact/inputtext";
 import { useHistory } from "react-router-dom";
 import { TotalMarketCap } from "../components/dashboard/TotalMarketCap";
 import { HaberTablo } from "../components/dashboard/HaberTablo";
+import { GuncelHaberler } from "../components/dashboard/GuncelHaberler";
 
 export const HaberAnaliz = () => {
   const [news, setNews] = useState([]);
 
   return (
-    <div className="p-grid">
+    <div>
       <TotalMarketCap />
-      <div style={{ marginLeft: "10%", marginTop: "5%" }}>
+      <div style={{  marginTop: "15%" }}>
         <HaberTablo />
+        <GuncelHaberler/>
       </div>
     </div>
   );

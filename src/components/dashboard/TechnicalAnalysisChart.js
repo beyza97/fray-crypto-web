@@ -10,7 +10,7 @@ return(
         <Col>
             <Card>
                 <CardBody  style={{ height: "600px" }}>
-                    {/* <TradingViewWidget 
+                    <TradingViewWidget 
                         symbol={"BIST:" + (slug.split(", ")[1] || slug)}
                         theme={Themes.DARK}
                         locale="tr"
@@ -23,12 +23,13 @@ return(
                         toolbar_bg="f1f3f6"
                         withdateranges={true}
                         save_images={false}
-                        studies={["ROC@tv-basicstudies","StochasticRSI@tv-basicstudies","MASimple@tv-basicstudies"]}
+                        studies={[/*"ROC@tv-basicstudies",*/"RSI@tv-basicstudies","MASimple@tv-basicstudies@tv-basicstudies","MACD@tv-basicstudies"]}
+                        //moving average ekle 21 günlük 
                         show_popup_button={true}
                         popup_width={1000}
                         popup_height={650}
                         
-                    /> */}
+                    />
                 </CardBody>
             </Card>
         </Col>

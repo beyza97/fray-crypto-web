@@ -19,6 +19,9 @@ import { TechnicalAnalysis } from "../components/dashboard/TechnicalAnalysisChar
 import { TotalMarketCap } from "../components/dashboard/TotalMarketCap";
 import { Top10Coins } from "../components/dashboard/Top10Coins";
 import { Top10CoinsTable } from "../components/dashboard/Top10CoinsTable";
+import { HaberAnaliz } from "./HaberAnaliz";
+import { HaberTablo } from "../components/dashboard/HaberTablo";
+import { GuncelHaberler } from "../components/dashboard/GuncelHaberler";
 
 export const Dashboard = () => {
   const [dash, setDash] = useState([]);
@@ -58,8 +61,12 @@ export const Dashboard = () => {
         <div className="p-col-5" style={{ marginTop: "40px" }}>
           <StockRecently />
         </div>
+        <div className="p-col-6" style={{ marginTop: "40px" }}>
+        <GuncelHaberler style={{ marginTop: "5%",marginBottom:"5%" }} />
+        </div>
       </div>
-      <TechnicalAnalysis style={{ marginTop: "50px" }} />
+
+      {/* <TechnicalAnalysis style={{ marginTop: "50px" }} /> */}
       <LastComment />
     </body>
   );

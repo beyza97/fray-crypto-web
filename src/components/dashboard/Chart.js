@@ -12,7 +12,7 @@ export function ModuleTradingView({/*tradeinfo,*/ fullSize }) {
       <Col>
         <Card>
           <CardBody style={{ height: "700px" }}>
-            {/* <TradingViewWidget
+            <TradingViewWidget
               symbol={"BTC:" + (slug.split(",   ")[1] || slug)}
               // slug={tradeinfo.symbol}
               theme={Themes.DARK}
@@ -36,7 +36,7 @@ export function ModuleTradingView({/*tradeinfo,*/ fullSize }) {
               calendar={true}
               container_id="trandingview_3a71"  
 
-            /> */}
+            />
           </CardBody>
         </Card>
       </Col>

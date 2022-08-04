@@ -7,21 +7,19 @@ export const Top10Coins = () => {
 
   let api = useAxios();
   useEffect(() => {
-    //api.get('/favorite').then(res => setFavorite(res.data))
     api
-      .get("/crypto/coin/dominance/USD")
+      .get("/crypto/coin/dominance?ccy=USD")
       .then((res) => settopTen(res.data))
       .catch((err) => console.log("error", err));
   }, []);
-
+  console.log(topten, "top 10 coins");
   return (
     <>
-      <h2 style={{ marginLeft: "10%" }}>Top 10 Coin Listesi</h2>
+      <h2 style={{ /*marginLeft: "10%"*/ }}>Top 10 Coin Listesi</h2>
       <div className="tab-table-card" style={{ marginLeft: "10%" }}>
         <Top10CoinsTable topCoins={topten.dominance} />
       </div>
     </>
-  );/* dominance içerisindeki 
+  ); /* dominance içerisindeki 
   veriler kullanılacağı için dominance içerisine girildi*/
 };
-
