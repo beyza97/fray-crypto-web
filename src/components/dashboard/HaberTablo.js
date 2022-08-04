@@ -15,12 +15,16 @@ export const HaberTablo = ({ news }) => {
     const [activeIndex1, setActiveIndex1] = useState(1);
     // let datetr[]=moment(news.publication_datetime).format('llll');
     // console.log("datetr ", datetr);
-
+    if(news){
+      news.map(item => (
+        item.publication_datetime = moment(item.publication_datetime).format('llll')
+      ))
+      }
   console.log("news", news);
     return news ? (
       <div>
         <DataTable 
-          value={news} paginator className='datatable-responsive' resizableColumns columnResizeMode='fit' responsiveLayout='scroll' rows={6}>
+          value={news} paginator className="datatable-responsive" resizableColumns columnResizeMode='fit' responsiveLayout='scroll' rows={6}>
           <Column field="publication_datetime" sortable header="Tarih/Saat" style={{width:'10%'}}></Column>
           <Column field="link" header="Kaynak" style={{width:'40%'}} body={<Link to={news.link}>Haberi Kaynağından<br></br>Okuyun</Link>}/>
           <Column field="title" sortable header="Başlık" style={{width:'20%'}} />
