@@ -1,0 +1,17 @@
+
+.tabview-demo .tabview-header-icon i, .tabview-demo .tabview-header-icon span {
+    vertical-align: middle;
+}
+
+.tabview-demo .p-tabview p {
+    line-height: 1.5;
+    margin: 0;
+}
+.button-technical{
+    background-image: linear-gradient(to right, #19392F  0%, #1A5744 51%, #22755B 100%);
+    color:#88AB9F;
+    border-radius: 1px;
+    border: 1px;
+    vertical-align: middle;
+    
+}

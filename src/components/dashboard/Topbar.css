@@ -1,0 +1,59 @@
+
+.button-demo .p-button {
+    margin-right: 0.5rem;
+}
+.button-demo .p-buttonset .p-button {
+    margin-right: 0;
+}
+.button-demo .template .p-button i {
+    line-height: 3rem;
+}
+.button-demo .template .p-button.blog {
+    background: linear-gradient(to left, var(--purple-600) 50%, var(--purple-700) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--purple-700);
+}
+.button-demo .template .p-button.blog:hover {
+    background-position: left bottom;
+}
+.button-demo .template .p-button.blog i {
+    background-color: var(--purple-700);
+}
+.button-demo .template .p-button.blog:focus {
+    box-shadow: 0 0 0 1px var(--purple-400);
+}
+.button-demo .template .p-button.filtrele {
+    background: linear-gradient(to left, var(--pink-600) 50%, var(--pink-700) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 0.5s ease-out;
+    color: #fff;
+    border-color: var(--pink-700);
+}
+.button-demo .template .p-button.filtrele:hover {
+    background-position: left bottom;
+}
+.button-demo .template .p-button.filtrele i {
+    background-color: var(--pink-700);
+}
+.button-demo .template .p-button.filtrele:focus {
+    box-shadow: 0 0 0 1px var(--pink-400);
+}
+
+
+@media screen and (max-width: 960px) {
+    .button-demo .p-button {
+        margin-bottom: 0.5rem;
+    }
+    .button-demo .p-button:not(.p-button-icon-only) {
+        display: flex;
+        width: 100%;
+    }
+    .button-demo .p-buttonset .p-button {
+        margin-bottom: 0;
+    }
+}
+                 

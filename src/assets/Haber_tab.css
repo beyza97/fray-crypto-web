@@ -11,3 +11,10 @@
     line-height: 1;
     margin: 0;
 }
+
+.tabview-demo , .card{
+    width: max-content;
+}
+.datatable-responsive{
+    width: auto;
+}

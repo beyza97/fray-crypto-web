@@ -3,7 +3,7 @@ import { StockPriceChart } from './Summary/StockPriceChart';
 import { CompanyDetail } from './Summary/CompanyDetail';
 import { ValuationFactors } from './Summary/ValuationFactors';
 import { DividendInformation } from './Summary/DividendInformation';
-import { ThousandPanel } from './Summary/ThousandPanel';
+import { ThousandPanell } from './Summary/ThousandPanell';
 import { LastComment } from '../LastComment';
 import { RadarChart } from './Summary/RadarChart';
 import { SimilarCompany } from './Summary/SimilarCompany';
@@ -24,7 +24,7 @@ export const Summary = (company) => {
                     <DividendInformation />
                 </div>
             </div>
-            <ThousandPanel code={company.code} />
+            <ThousandPanell code={company.code} />
             <RadarChart code={company.code} />
             <SimilarCompany code={company.code} />
             <LastComment />

@@ -52,15 +52,15 @@ const horizontalOptions = {
                     font: { size: 16 },
                     formatter: function (value, ctx) {
                         return compNames[ctx.datasetIndex] + ":" + ctx.dataset.data[ctx.dataIndex];
-                    }
+  }
                 },
                 display: true
             },
             font: {
                 weight: 'bold',
                 size: 12
-            }
-        }
+  }
+  }
     },
     scales: {
         x: {
@@ -69,7 +69,7 @@ const horizontalOptions = {
             },
             grid: {
                 display: false,
-            }
+  }
         },
         y: {
             ticks: {
@@ -77,8 +77,8 @@ const horizontalOptions = {
             },
             grid: {
                 display: false,
-            }
-        }
+  }
+}
     }
 };
 

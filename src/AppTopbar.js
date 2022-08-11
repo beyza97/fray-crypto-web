@@ -12,9 +12,9 @@ import query from "devextreme/data/query";
 import AppLeftBar from "./AppLeftBar";
 
 {
-  /* <div>
+   <div>
 <AppLeftBar/>
-</div> */
+</div> 
 }
 
 const AppTopbar = (props) => {

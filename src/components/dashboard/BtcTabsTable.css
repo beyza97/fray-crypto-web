@@ -1,6 +1,6 @@
+
 .tabview-demo .tabview-header-icon i, .tabview-demo .tabview-header-icon span {
     vertical-align: middle;
-    
 }
 
 .tabview-demo .tabview-header-icon span {
@@ -8,6 +8,9 @@
 }
 
 .tabview-demo .p-tabview p {
-    line-height: 1;
+    line-height: 1.5;
     margin: 0;
+}
+.five-header-tab{
+    color:#3B3E3B;
 }

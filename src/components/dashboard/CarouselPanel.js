@@ -35,7 +35,7 @@ export const CarouselPanel = () => {
     labels: ["January", "February", "March", "April", "May", "June", "July"],
     datasets: [
       {
-        data: [65, 59, 80, 81, 56, 55, 40],
+        data: [1, 2, 5 ],
         fill: false,
         borderColor: "#42AE7F",
       },

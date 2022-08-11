@@ -2,11 +2,13 @@ import React from 'react';
 import { Accordion, AccordionItem } from 'react-light-accordion';
 import './HorizontalAccordion.css';
 import { ModuleTradingView } from './Chart';
-import { TechnicalAnalysis } from './TechnicalAnalysisChart';
+import { TechnicalAnalysis } from './TechnicalAnalysis';
 import { Top10Coins } from './Top10Coins';
+import { BTCtabs } from './BTCtabs';
 
 export const BTCHorizontalAccordion = () => (
   <div>
+  <BTCtabs/>
     <h1 style={{marginLeft:"10%"}}></h1>
     <Accordion atomic={true} style={{}}>
 

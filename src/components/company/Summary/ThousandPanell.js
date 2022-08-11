@@ -77,7 +77,7 @@ const dayValue = [
     { key: '3', label: '1 yıl', value: '360', data: null },
 ];
 
-export const ThousandPanel = ({ code }) => {
+export const ThousandPanell = ({ code }) => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [, ForceUpdate] = useState(0)
     const api = useAxios()

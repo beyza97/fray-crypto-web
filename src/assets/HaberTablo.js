@@ -10,22 +10,18 @@ import ProductService from "../../service/ProductService";
 import moment from "moment";
 import "moment/locale/tr"; // haber tarih ve saatini tr formatında ayarlıyor
 import { Link } from "react-router-dom";
-import ReactTradingviewWidget, {colorTheme, width } from "react-tradingview-widget";
-import useAxios from "../../utils/useAxios";
 
 export const HaberTablo = ({ news }) => {
   const [activeIndex1, setActiveIndex1] = useState(1);
-
-  // let datetr[]=moment(news.publication_datetime).format('llll');
+  // let datetr[]=moment(newsc).format('llll');
   // console.log("datetr ", datetr);
-
-  
   if (news) {
-    news.map((item) =>
-        (item.a = moment(item.publication_datetime).format("llll")));
+    news.map(
+      (item) =>
+        (item.publication_datetime = (moment(item.publication_datetime).format("llll")))
+    );
   }
   console.log("news", news);
-  
   return news ? (
     // <div>
     //   <DataTable
@@ -40,13 +36,12 @@ export const HaberTablo = ({ news }) => {
     //      */}
     //   </DataTable>
     // </div>
-  
- 
-    <div className="tabview-demo">
-      <div className="card-demo">
+
+
+      <div className="card">
         {/* <h5>Programmatic</h5> */}
 
-        <div className="aa">
+        <div className="pt-2 pb-4">
           <Button
             onClick={() => setActiveIndex1(0)}
             className="p-button-text mr-1"
@@ -70,12 +65,12 @@ export const HaberTablo = ({ news }) => {
         </div>
 
         <TabView
-          className=" table"
+        className=" table"
           activeIndex={activeIndex1}
           onTabChange={(e) => setActiveIndex1(e.index)}
         >
           <TabPanel header="1">
-
+            <div>
               <DataTable
                 value={news}
                 paginator
@@ -86,7 +81,7 @@ export const HaberTablo = ({ news }) => {
                 rows={6}
               >
                 <Column
-                  field="a"
+                  field="publication_datetime"
                   /*sortable*/ header="Tarih/Saat"
                   style={{ width: "10%" }}
                 ></Column>
@@ -112,7 +107,7 @@ export const HaberTablo = ({ news }) => {
                   style={{ width: "20%" }}
                 />
               </DataTable>
-
+            </div>
 
             {/* {news.slice(0,6).map((a)=>( */}
             {/* <DataTable value={news} resizableColumns columnResizeMode='fit' responsiveLayout='scroll' rows={6}>
@@ -125,102 +120,41 @@ export const HaberTablo = ({ news }) => {
           </TabPanel>
 
           <TabPanel header="2">
-          <DataTable
-                value={news}
-                paginator
-                className="datatable-responsive"
-                resizableColumns
-                columnResizeMode="fit"
-                responsiveLayout="scroll"
-                rows={6}
-              >
-                <Column
-                  field="a"
-                  /*sortable*/ header="Tarih/Saat"
-                  style={{ width: "10%" }}
-                ></Column>
-                <Column
-                  field="link"
-                  header="Kaynak"
-                  style={{ width: "40%" }}
-                  body={
-                    <Link to={news.link}>
-                      Haberi Kaynağından<br></br>Okuyun
-                    </Link>
-                  }
-                />
-                <Column
-                  field="title"
-                  sortable
-                  header="Başlık"
-                  style={{ width: "10%" }}
-                />
-                <Column
-                  field="=)"
-                  header="Tepki"
-                  style={{ width: "20%" }}
-                />
-              </DataTable>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci
+              velit, sed quia non numquam eius modi.
+            </p>
           </TabPanel>
           <TabPanel header="3">
-          <DataTable
-                value={news}
-                paginator
-                className="datatable-responsive"
-                resizableColumns
-                columnResizeMode="fit"
-                responsiveLayout="scroll"
-                rows={6}
-              >
-                <Column
-                  field="a"
-                  /*sortable*/ header="Tarih/Saat"
-                  style={{ width: "10%" }}
-                ></Column>
-                <Column
-                  field="link"
-                  header="Kaynak"
-                  style={{ width: "40%" }}
-                  body={
-                    <Link to={news.link}>
-                      Haberi Kaynağından<br></br>Okuyun
-                    </Link>
-                  }
-                />
-                <Column
-                  field=""
-                  sortable
-                  header="Başlık"
-                  style={{ width: "10%" }}
-                />
-                <Column
-                  field="sentiment.title"
-                  header="Tepki"
-                  style={{ width: "20%" }}
-                />
-              </DataTable>
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque corrupti quos
+              dolores et quas molestias excepturi sint occaecati cupiditate non
+              provident, similique sunt in culpa qui officia deserunt mollitia
+              animi, id est laborum et dolorum fuga. Et harum quidem rerum
+              facilis est et expedita distinctio. Nam libero tempore, cum soluta
+              nobis est eligendi optio cumque nihil impedit quo minus.
+            </p>
           </TabPanel>
           <TabPanel header="4">
-          <div class="tradingview-widget-container">
-          <div class="tradingview-widget-container__widget"></div>
-          <div class="tradingview-widget-copyright"><a href="https://tr.tradingview.com/markets/currencies/economic-calendar/" rel="noopener" target="_blank"><span class="blue-text">Ekonomik Takvim</span></a> TradingView'den</div>
-          {/* <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async> */}
-            <ReactTradingviewWidget
-            
-            width= "100%"
-            heigh= "100%"
-            colorTheme= "dark"
-            isTransparent= {false}
-            locale= "tr"
-            importanceFilter= "-1,0,1"
-    />
-
-</div>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+              eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci
+              velit, sed quia non numquam eius modi.
+            </p>
           </TabPanel>
         </TabView>
       </div>
-    </div>
-    
+
   ) : (
     <></>
   );

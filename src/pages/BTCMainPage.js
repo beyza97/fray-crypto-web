@@ -15,8 +15,10 @@ import { BTCTopbar } from "../components/dashboard/BTCTopbar";
 import { UpcomingDividend } from "../components/dashboard/UpcomingDividend";
 import { ModuleTradingView } from "../components/dashboard/Chart";
 import { Col } from "reactstrap";
-import { TechnicalAnalysis } from "../components/dashboard/TechnicalAnalysisChart";
+import { TechnicalAnalysis } from "../components/dashboard/TechnicalAnalysis";
 import { BTCHorizontalAccordion } from "../components/dashboard/BTCHorizontalAccordion";
+import { BTCtabs } from "../components/dashboard/BTCtabs";
+import { ThousandPanel } from "../components/company/Summary/ThousandPanell";
 
 
 export const BTCMainPage = () => {
@@ -24,13 +26,18 @@ export const BTCMainPage = () => {
     <body className="dashboard-body">
       <UpcomingDividend />
       <div className="p-grid" style={{ marginTop: "5%" }}>
-        <div className="p-col-10" style={{ marginLeft: "10%" }}>
-          
+      <div className="p-col-12">
+      <BTCtabs/>
+      </div>
+        {/* <div className="p-col-10" style={{ marginLeft: "10%" }}>
+
           <BTCHorizontalAccordion style={{ marginTop: "40px" }} />
 
-        </div>
+
+        </div> */}
 
       </div>
+
     </body>
   );
 };

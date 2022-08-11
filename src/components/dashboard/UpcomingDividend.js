@@ -3,6 +3,7 @@ import { Carousel } from "primereact/carousel";
 import { Button } from "primereact/button";
 import useAxios from "../../utils/useAxios";
 import { setPublicElementWrapper } from "devextreme/core/element";
+import { CarouselPanel } from "./CarouselPanel";
 
 export const UpcomingDividend = () => {
   const [dividents, setDividents] = useState([]);
@@ -60,11 +61,11 @@ export const UpcomingDividend = () => {
       <></>
     );
   };
-  console.log("test_");
+  console.log("test_", dividents);
 
   return dividents ? (
     <div>
-      {/* <Carousel
+      <CarouselPanel
         value={dividents.dominance}
         numVisible={3}
         numScroll={1}
@@ -73,7 +74,7 @@ export const UpcomingDividend = () => {
         circular
         autoplayInterval={3000}
         itemTemplate={dividentsTemplate}
-      /> */}
+      />
     </div>
   
   ):(<></>);
